@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "audio_file": "D:\\InternshipProject\\ERSS Project\\audio\\detroit_911_1.mp3",
+    "processed_at": "20260526_150839"
+  },
+  "summary": {
+    "error": "llama runner process has terminated: llama_init_from_model: failed to initialize the context: failed to allocate compute pp buffers\npanic: (status code: 500)"
+  },
+  "diarized_transcript": [
+    {
+      "start": 0.0,
+      "end": 8.7,
+      "speaker": "SPEAKER_00",
+      "text": "Monday, 2, 20, 2006 at 5.59 pm."
+    },
+    {
+      "start": 10.84,
+      "end": 12.92,
+      "speaker": "SPEAKER_01",
+      "text": "In March, 19th, I will wear the paddle."
+    },
+    {
+      "start": 15.08,
+      "end": 16.96,
+      "speaker": "SPEAKER_01",
+      "text": "My mom has hair on."
+    },
+    {
+      "start": 18.3,
+      "end": 19.16,
+      "speaker": "SPEAKER_01",
+      "text": "Girl's proof."
+    },
+    {
+      "start": 20.52,
+      "end": 21.02,
+      "speaker": "SPEAKER_01",
+      "text": "Girl's proof."
+    },
+    {
+      "start": 22.3,
+      "end": 22.96,
+      "speaker": "SPEAKER_01",
+      "text": "My mom."
+    },
+    {
+      "start": 23.48,
+      "end": 24.5,
+      "speaker": "SPEAKER_01",
+      "text": "Where's Mr. Charter at?"
+    },
+    {
+      "start": 25.7,
+      "end": 26.24,
+      "speaker": "SPEAKER_01",
+      "text": "Right here."
+    },
+    {
+      "start": 26.74,
+      "end": 27.54,
+      "speaker": "SPEAKER_01",
+      "text": "Let me see if you want."
+    },
+    {
+      "start": 29.18,
+      "end": 29.84,
+      "speaker": "SPEAKER_01",
+      "text": "She's here."
+    },
+    {
+      "start": 30.2,
+      "end": 30.2,
+      "speaker": "SPEAKER_01",
+      "text": ""
+    },
+    {
+      "start": 30.54,
+      "end": 30.88,
+      "speaker": "SPEAKER_01",
+      "text": "She's here."
+    },
+    {
+      "start": 31.0,
+      "end": 31.24,
+      "speaker": "SPEAKER_01",
+      "text": "Talk."
+    },
+    {
+      "start": 32.16,
+      "end": 33.58,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, I'm going to send a police to your house."
+    },
+    {
+      "start": 33.64,
+      "end": 34.86,
+      "speaker": "SPEAKER_01",
+      "text": "I'll find out what's going on with you."
+    },
+    {
+      "start": 36.480000000000004,
+      "end": 37.02,
+      "speaker": "SPEAKER_01",
+      "text": "1950's proof."
+    },
+    {
+      "start": 38.54,
+      "end": 39.26,
+      "speaker": "SPEAKER_01",
+      "text": "Department 3."
+    }
+  ],
+  "whisper_segments": [
+    {
+      "start": 0.0,
+      "end": 8.7,
+      "text": "Monday, 2, 20, 2006 at 5.59 pm."
+    },
+    {
+      "start": 10.84,
+      "end": 12.92,
+      "text": "In March, 19th, I will wear the paddle."
+    },
+    {
+      "start": 15.08,
+      "end": 16.96,
+      "text": "My mom has hair on."
+    },
+    {
+      "start": 18.3,
+      "end": 19.16,
+      "text": "Girl's proof."
+    },
+    {
+      "start": 20.52,
+      "end": 21.02,
+      "text": "Girl's proof."
+    },
+    {
+      "start": 22.3,
+      "end": 22.96,
+      "text": "My mom."
+    },
+    {
+      "start": 23.48,
+      "end": 24.5,
+      "text": "Where's Mr. Charter at?"
+    },
+    {
+      "start": 25.7,
+      "end": 26.24,
+      "text": "Right here."
+    },
+    {
+      "start": 26.74,
+      "end": 27.54,
+      "text": "Let me see if you want."
+    },
+    {
+      "start": 29.18,
+      "end": 29.84,
+      "text": "She's here."
+    },
+    {
+      "start": 30.2,
+      "end": 30.2,
+      "text": ""
+    },
+    {
+      "start": 30.54,
+      "end": 30.88,
+      "text": "She's here."
+    },
+    {
+      "start": 31.0,
+      "end": 31.24,
+      "text": "Talk."
+    },
+    {
+      "start": 32.16,
+      "end": 33.58,
+      "text": "Okay, I'm going to send a police to your house."
+    },
+    {
+      "start": 33.64,
+      "end": 34.86,
+      "text": "I'll find out what's going on with you."
+    },
+    {
+      "start": 36.480000000000004,
+      "end": 37.02,
+      "text": "1950's proof."
+    },
+    {
+      "start": 38.54,
+      "end": 39.26,
+      "text": "Department 3."
+    }
+  ]
+}

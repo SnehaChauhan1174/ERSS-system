@@ -19,8 +19,8 @@ pipeline = Pipeline.from_pretrained(
     "pyannote/speaker-diarization-3.1",
     token = HF_TOKEN
 )
-audio_path = r"D:\InternshipProject\ERSS Project\audio\corona_aircrash.mp3"
-output_file = "audio/test_audio.wav"
+audio_path = r"/audio/detroit_911_1.mp3"
+output_file = "../audio/test_audio2.wav"
 
 result = whisper_model.transcribe(audio_path, word_timestamps=True)
 
@@ -36,7 +36,7 @@ wave = AudioSegment.from_mp3(audio_path)
 wave.export(output_file,format="wav")
 
 # load audio
-audio_data, sample_rate = sf.read("audio/test_audio.wav",dtype="float32")
+audio_data, sample_rate = sf.read("../audio/test_audio.wav", dtype="float32")
 
 # soundfile returns (time, channels) → convert to (channels, time)
 if audio_data.ndim == 1:
@@ -103,7 +103,7 @@ if current_speaker:
         "text": " ".join(current_text).strip()
     })
 
-print("both whisper and pyannoe result")
+print("both whisper and pyannote result")
 for entry in final:
     print(f"[{entry['start']:.1f}s] {entry['speaker']}: {entry['text']}")
 
@@ -113,7 +113,6 @@ for entry in final:
 # annotation = diarization.speaker_diarization
 # for turn,_,speaker in annotation.itertracks(yield_label =True):
 #     print(f"[{turn.start:.1f}s-{turn.end:.1f}] {speaker}")
-
 
 
 
