@@ -10,7 +10,6 @@ ROOT_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = ROOT_DIR / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-
 def save_output(audio_path, whis_seg, merge_seg, summary):
 
     # use audio filename as base for output filename
@@ -38,12 +37,18 @@ def save_output(audio_path, whis_seg, merge_seg, summary):
 
 def main():
     whisper_model = whisper.load_model("base")
-    audio_path = r"D:\InternshipProject\ERSS Project\audio\detroit_911_1.mp3"
-    wav_path   = r"D:\InternshipProject\ERSS Project\audio\test_audio2.wav"
+    audio_path = r"D:\InternshipProject\ERSS Project\audio\hindi_audio.mp3"
+    wav_path   = r"D:\InternshipProject\ERSS Project\audio\test_audio9.wav"
 
 
-    result   = whisper_model.transcribe(audio_path, word_timestamps=True)
- 
+    result   = whisper_model.transcribe(
+        audio_path,
+        word_timestamps=True,
+        language="hi",
+        task="transcribe" )
+
+    print(f"Detected language: {result['language']}")
+
 
     whis_seg = []
     for seg in result["segments"]:
@@ -68,6 +73,10 @@ def main():
 
 
     merge_seg = merger.merge_whisper_first(whis_seg, pyann_seg)
+    # merge_seg = merger.combine_same_speaker_segments(
+    #     merge_seg,
+    #     max_gap=2.0
+    # )
 
     print("\nFINAL TRANSCRIPT")
     for seg in merge_seg:

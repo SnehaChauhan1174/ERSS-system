@@ -1,0 +1,2424 @@
+{
+  "metadata": {
+    "audio_file": "D:\\InternshipProject\\ERSS Project\\audio\\audio5.mp3",
+    "processed_at": "20260528_014041"
+  },
+  "summary": {
+    "summary": "A 29-year-old man and his 26-year-old wife are experiencing an overdose after consuming marijuana brownies. They are barely breathing and are in need of immediate medical attention. The incident occurred at their residence, but the exact address is not mentioned. The caller is Edward Sanchez, and his wife's name is Stacy Sanchez. The caller reports that they have not taken any other substances besides marijuana, but his wife takes Vykiden medication regularly. The caller is anxious and disoriented, and the situation is critical. The police and rescue teams are on the way, but their exact location and ETA are not specified.",
+    "incident_type": "Overdose",
+    "location": "Not specified, but mentioned to be near Dearborn Heights",
+    "casualties": "2, barely breathing",
+    "caller_count": "1",
+    "key_details": [
+      "Marijuana overdose",
+      "Brownies consumed",
+      "Vykiden medication mentioned",
+      "No other substances taken",
+      "Wife's condition critical"
+    ],
+    "priority": "HIGH",
+    "recommended_response": "Ambulance, paramedics, and police units"
+  },
+  "diarized_transcript": [
+    {
+      "start": 0.0,
+      "end": 3.32,
+      "speaker": "SPEAKER_01",
+      "text": "We've removed some personal information from the following 9-1-1 call."
+    },
+    {
+      "start": 3.7,
+      "end": 6.24,
+      "speaker": "SPEAKER_01",
+      "text": "You will hear telling where the information has been removed."
+    },
+    {
+      "start": 6.56,
+      "end": 7.34,
+      "speaker": "SPEAKER_00",
+      "text": "Boy, we..."
+    },
+    {
+      "start": 8.020000000000003,
+      "end": 9.08,
+      "speaker": "SPEAKER_00",
+      "text": "My soul's asleep."
+    },
+    {
+      "start": 10.22,
+      "end": 11.16,
+      "speaker": "SPEAKER_01",
+      "text": "Do you want to hit the emergency?"
+    },
+    {
+      "start": 11.74,
+      "end": 15.14,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah, can you please send rescue to..."
+    },
+    {
+      "start": 16.980000000000004,
+      "end": 19.6,
+      "speaker": "SPEAKER_00",
+      "text": "I think I'm having an overdose of the soul as my wife."
+    },
+    {
+      "start": 20.14,
+      "end": 21.12,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, you and your wife?"
+    },
+    {
+      "start": 21.4,
+      "end": 21.56,
+      "speaker": "SPEAKER_00",
+      "text": "Yes."
+    },
+    {
+      "start": 22.8,
+      "end": 23.7,
+      "speaker": "SPEAKER_00",
+      "text": "Overnose of what?"
+    },
+    {
+      "start": 24.02,
+      "end": 24.46,
+      "speaker": "SPEAKER_00",
+      "text": "Marijuana."
+    },
+    {
+      "start": 24.94,
+      "end": 26.3,
+      "speaker": "SPEAKER_00",
+      "text": "I don't know if it had something in it."
+    },
+    {
+      "start": 27.380000000000003,
+      "end": 27.82,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 28.18,
+      "end": 29.14,
+      "speaker": "SPEAKER_00",
+      "text": "Can you please send rescue?"
+    },
+    {
+      "start": 29.14,
+      "end": 30.24,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, how old are you?"
+    },
+    {
+      "start": 30.48,
+      "end": 35.44,
+      "speaker": "SPEAKER_00",
+      "text": "I'm 29 years old and my wife is 26."
+    },
+    {
+      "start": 35.66,
+      "end": 36.22,
+      "speaker": "SPEAKER_00",
+      "text": "Please come."
+    },
+    {
+      "start": 36.44,
+      "end": 36.84,
+      "speaker": "SPEAKER_00",
+      "text": "26?"
+    },
+    {
+      "start": 37.22,
+      "end": 37.76,
+      "speaker": "SPEAKER_00",
+      "text": "Yes, please."
+    },
+    {
+      "start": 38.08,
+      "end": 39.24,
+      "speaker": "SPEAKER_01",
+      "text": "Can you guys been drinking also?"
+    },
+    {
+      "start": 39.86,
+      "end": 40.14,
+      "speaker": "SPEAKER_00",
+      "text": "What?"
+    },
+    {
+      "start": 40.5,
+      "end": 41.78,
+      "speaker": "SPEAKER_01",
+      "text": "Can you guys been drinking today too?"
+    },
+    {
+      "start": 42.38,
+      "end": 43.18,
+      "speaker": "SPEAKER_00",
+      "text": "No, that's it."
+    },
+    {
+      "start": 43.72,
+      "end": 45.78,
+      "speaker": "SPEAKER_01",
+      "text": "No, is there any weapons in the house?"
+    },
+    {
+      "start": 46.1,
+      "end": 47.3,
+      "speaker": "SPEAKER_00",
+      "text": "No, please come."
+    },
+    {
+      "start": 47.58,
+      "end": 49.14,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, Marijuana, why..."
+    },
+    {
+      "start": 49.76,
+      "end": 52.36,
+      "speaker": "SPEAKER_01",
+      "text": "You guys have fever, anything?"
+    },
+    {
+      "start": 52.66,
+      "end": 53.86,
+      "speaker": "SPEAKER_00",
+      "text": "No, I'm just..."
+    },
+    {
+      "start": 53.86,
+      "end": 54.66,
+      "speaker": "SPEAKER_00",
+      "text": "I think we're dying."
+    },
+    {
+      "start": 55.76,
+      "end": 57.16,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, how much did you guys have?"
+    },
+    {
+      "start": 57.16,
+      "end": 60.48,
+      "speaker": "SPEAKER_00",
+      "text": "I don't know, we made brownies and I think we're dead."
+    },
+    {
+      "start": 60.74,
+      "end": 61.44,
+      "speaker": "SPEAKER_00",
+      "text": "I really do."
+    },
+    {
+      "start": 61.68,
+      "end": 64.14,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, how much did you put in the brownies?"
+    },
+    {
+      "start": 64.44,
+      "end": 65.06,
+      "speaker": "SPEAKER_00",
+      "text": "I don't know."
+    },
+    {
+      "start": 65.4,
+      "end": 66.46,
+      "speaker": "SPEAKER_00",
+      "text": "Was it in bags?"
+    },
+    {
+      "start": 67.0,
+      "end": 67.86,
+      "speaker": "SPEAKER_01",
+      "text": "Who made the brownies?"
+    },
+    {
+      "start": 69.06,
+      "end": 70.34,
+      "speaker": "SPEAKER_00",
+      "text": "My wife and I did."
+    },
+    {
+      "start": 71.3,
+      "end": 71.96,
+      "speaker": "SPEAKER_00",
+      "text": "Cuba, come here."
+    },
+    {
+      "start": 72.42,
+      "end": 73.48,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, get her."
+    },
+    {
+      "start": 74.24,
+      "end": 76.78,
+      "speaker": "SPEAKER_00",
+      "text": "She's on the living room ground right now."
+    },
+    {
+      "start": 76.9,
+      "end": 77.52,
+      "speaker": "SPEAKER_01",
+      "text": "Is she breathing?"
+    },
+    {
+      "start": 78.0,
+      "end": 79.14,
+      "speaker": "SPEAKER_00",
+      "text": "She's barely breathing."
+    },
+    {
+      "start": 79.4,
+      "end": 79.94,
+      "speaker": "SPEAKER_01",
+      "text": "Is she awake?"
+    },
+    {
+      "start": 80.38,
+      "end": 81.46,
+      "speaker": "SPEAKER_00",
+      "text": "I think so."
+    },
+    {
+      "start": 82.78,
+      "end": 83.76,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, can you look?"
+    },
+    {
+      "start": 84.38,
+      "end": 84.7,
+      "speaker": "SPEAKER_00",
+      "text": "Pardon?"
+    },
+    {
+      "start": 85.12,
+      "end": 85.9,
+      "speaker": "SPEAKER_00",
+      "text": "Can you look?"
+    },
+    {
+      "start": 86.43999999999998,
+      "end": 88.96,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah, I can feel she's laying right down in front of me."
+    },
+    {
+      "start": 89.08,
+      "end": 91.42,
+      "speaker": "SPEAKER_00",
+      "text": "Time is going by really, really, really, really slow."
+    },
+    {
+      "start": 91.84,
+      "end": 94.28,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, what I'm on the phone with you is you don't end here."
+    },
+    {
+      "start": 94.62,
+      "end": 97.12,
+      "speaker": "SPEAKER_01",
+      "text": "Do you know how much I've met you bought and put in the brownies?"
+    },
+    {
+      "start": 97.62,
+      "end": 97.92,
+      "speaker": "SPEAKER_00",
+      "text": "Pardon?"
+    },
+    {
+      "start": 98.36,
+      "end": 99.4,
+      "speaker": "SPEAKER_01",
+      "text": "How much did you buy?"
+    },
+    {
+      "start": 99.9,
+      "end": 100.36,
+      "speaker": "SPEAKER_00",
+      "text": "I don't..."
+    },
+    {
+      "start": 100.9,
+      "end": 102.04,
+      "speaker": "SPEAKER_00",
+      "text": "Just please send rescue."
+    },
+    {
+      "start": 102.16,
+      "end": 105.72,
+      "speaker": "SPEAKER_01",
+      "text": "There I'm the way, but I'm trying to figure how much you bought and put into the brownies, sir."
+    },
+    {
+      "start": 105.94,
+      "end": 107.54,
+      "speaker": "SPEAKER_01",
+      "text": "It's probably like a quarter ounce total."
+    },
+    {
+      "start": 107.86,
+      "end": 109.7,
+      "speaker": "SPEAKER_01",
+      "text": "A quarter ounce total into the brownies?"
+    },
+    {
+      "start": 109.76,
+      "end": 111.08,
+      "speaker": "SPEAKER_01",
+      "text": "Did you guys eat all the brownies?"
+    },
+    {
+      "start": 111.84,
+      "end": 112.66,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah, we did."
+    },
+    {
+      "start": 116.24,
+      "end": 116.72,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 117.2,
+      "end": 118.64,
+      "speaker": "SPEAKER_01",
+      "text": "And you ate all the..."
+    },
+    {
+      "start": 118.64,
+      "end": 120.92,
+      "speaker": "SPEAKER_01",
+      "text": "Bahamut was a big patch, a little patch."
+    },
+    {
+      "start": 121.24,
+      "end": 122.84,
+      "speaker": "SPEAKER_00",
+      "text": "It was a quarter ounce."
+    },
+    {
+      "start": 123.52,
+      "end": 126.52,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, but brownie wise, how many people do you guys think you guys had?"
+    },
+    {
+      "start": 127.02,
+      "end": 127.8,
+      "speaker": "SPEAKER_00",
+      "text": "I don't know."
+    },
+    {
+      "start": 127.92,
+      "end": 129.72,
+      "speaker": "SPEAKER_00",
+      "text": "I probably had like a small chance."
+    },
+    {
+      "start": 130.36,
+      "end": 131.1,
+      "speaker": "SPEAKER_00",
+      "text": "Please come."
+    },
+    {
+      "start": 131.44,
+      "end": 131.7,
+      "speaker": "SPEAKER_00",
+      "text": "It's..."
+    },
+    {
+      "start": 131.7,
+      "end": 132.44,
+      "speaker": "SPEAKER_00",
+      "text": "What time is it?"
+    },
+    {
+      "start": 133.2,
+      "end": 134.34,
+      "speaker": "SPEAKER_01",
+      "text": "It's 9.37."
+    },
+    {
+      "start": 134.66,
+      "end": 136.78,
+      "speaker": "SPEAKER_00",
+      "text": "When did you guys ate last night at the brownies?"
+    },
+    {
+      "start": 137.2,
+      "end": 138.84,
+      "speaker": "SPEAKER_00",
+      "text": "Probably like an hour and a half ago."
+    },
+    {
+      "start": 140.14,
+      "end": 142.84,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, is your wife still breathing?"
+    },
+    {
+      "start": 142.84,
+      "end": 144.0,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah, she is."
+    },
+    {
+      "start": 144.42,
+      "end": 145.94,
+      "speaker": "SPEAKER_00",
+      "text": "She's kneeling down in front of me."
+    },
+    {
+      "start": 146.6,
+      "end": 147.0,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 147.34,
+      "end": 147.62,
+      "speaker": "SPEAKER_00",
+      "text": "I know."
+    },
+    {
+      "start": 147.86,
+      "end": 148.4,
+      "speaker": "SPEAKER_00",
+      "text": "We have to wait."
+    },
+    {
+      "start": 148.92,
+      "end": 150.94,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, is she Stacy Sanchez?"
+    },
+    {
+      "start": 151.54,
+      "end": 151.84,
+      "speaker": "SPEAKER_00",
+      "text": "Yes."
+    },
+    {
+      "start": 152.38,
+      "end": 153.06,
+      "speaker": "SPEAKER_00",
+      "text": "What's your name?"
+    },
+    {
+      "start": 153.42,
+      "end": 154.06,
+      "speaker": "SPEAKER_00",
+      "text": "My name is Edward."
+    },
+    {
+      "start": 154.4,
+      "end": 155.4,
+      "speaker": "SPEAKER_01",
+      "text": "Your Edward Sanchez?"
+    },
+    {
+      "start": 158.56,
+      "end": 158.96,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 159.3,
+      "end": 161.06,
+      "speaker": "SPEAKER_01",
+      "text": "And did you guys have any other photos, right?"
+    },
+    {
+      "start": 161.28,
+      "end": 161.64,
+      "speaker": "SPEAKER_01",
+      "text": "Do you know what?"
+    },
+    {
+      "start": 162.02,
+      "end": 162.28,
+      "speaker": "SPEAKER_00",
+      "text": "Pardon?"
+    },
+    {
+      "start": 162.98,
+      "end": 163.3,
+      "speaker": "SPEAKER_00",
+      "text": "Do you know?"
+    },
+    {
+      "start": 163.86,
+      "end": 165.82,
+      "speaker": "SPEAKER_01",
+      "text": "Did you guys do anything else today besides marijuana?"
+    },
+    {
+      "start": 166.28,
+      "end": 166.84,
+      "speaker": "SPEAKER_00",
+      "text": "No, that's it."
+    },
+    {
+      "start": 166.92,
+      "end": 167.74,
+      "speaker": "SPEAKER_00",
+      "text": "But I don't know what..."
+    },
+    {
+      "start": 167.74,
+      "end": 169.16,
+      "speaker": "SPEAKER_00",
+      "text": "Was it the marijuana could have been..."
+    },
+    {
+      "start": 169.16,
+      "end": 170.4,
+      "speaker": "SPEAKER_00",
+      "text": "There could have been something in the marijuana."
+    },
+    {
+      "start": 172.18,
+      "end": 172.58,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 172.58,
+      "end": 174.82,
+      "speaker": "SPEAKER_01",
+      "text": "Are you guys any sort of prescription pills?"
+    },
+    {
+      "start": 175.02,
+      "end": 176.2,
+      "speaker": "SPEAKER_01",
+      "text": "Are you guys taking it for other medications?"
+    },
+    {
+      "start": 176.76,
+      "end": 177.56,
+      "speaker": "SPEAKER_00",
+      "text": "No, no."
+    },
+    {
+      "start": 177.72,
+      "end": 179.58,
+      "speaker": "SPEAKER_00",
+      "text": "My wife takes..."
+    },
+    {
+      "start": 180.98,
+      "end": 181.68,
+      "speaker": "SPEAKER_00",
+      "text": "Vykiden though."
+    },
+    {
+      "start": 182.18,
+      "end": 183.16,
+      "speaker": "SPEAKER_01",
+      "text": "And did she take it in today?"
+    },
+    {
+      "start": 184.26,
+      "end": 185.4,
+      "speaker": "SPEAKER_00",
+      "text": "No, I don't think so."
+    },
+    {
+      "start": 186.7,
+      "end": 187.78,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, where's the vykiden?"
+    },
+    {
+      "start": 188.56,
+      "end": 190.7,
+      "speaker": "SPEAKER_00",
+      "text": "The vykiden is..."
+    },
+    {
+      "start": 191.57999999999998,
+      "end": 192.92,
+      "speaker": "SPEAKER_00",
+      "text": "It's in our medicine cabinet."
+    },
+    {
+      "start": 193.62,
+      "end": 194.7,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, but how many..."
+    },
+    {
+      "start": 194.7,
+      "end": 196.2,
+      "speaker": "SPEAKER_01",
+      "text": "Does she take a regular basis?"
+    },
+    {
+      "start": 196.78,
+      "end": 197.02,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah."
+    },
+    {
+      "start": 197.56,
+      "end": 198.96,
+      "speaker": "SPEAKER_01",
+      "text": "How many does she take on a regular basis?"
+    },
+    {
+      "start": 199.4,
+      "end": 200.48,
+      "speaker": "SPEAKER_01",
+      "text": "Two or eight?"
+    },
+    {
+      "start": 200.48,
+      "end": 201.92,
+      "speaker": "SPEAKER_00",
+      "text": "I don't know, like, five a day."
+    },
+    {
+      "start": 202.1,
+      "end": 202.64,
+      "speaker": "SPEAKER_00",
+      "text": "Please take..."
+    },
+    {
+      "start": 202.64,
+      "end": 203.9,
+      "speaker": "SPEAKER_01",
+      "text": "She takes about five a day?"
+    },
+    {
+      "start": 204.06,
+      "end": 204.28,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah."
+    },
+    {
+      "start": 204.8,
+      "end": 205.52,
+      "speaker": "SPEAKER_00",
+      "text": "Are you coming?"
+    },
+    {
+      "start": 205.86,
+      "end": 206.64,
+      "speaker": "SPEAKER_01",
+      "text": "Yeah, no, I'm the wait."
+    },
+    {
+      "start": 206.76,
+      "end": 207.96,
+      "speaker": "SPEAKER_01",
+      "text": "They've been here for two minutes."
+    },
+    {
+      "start": 208.1,
+      "end": 209.56,
+      "speaker": "SPEAKER_01",
+      "text": "There's no nine thirty-eight."
+    },
+    {
+      "start": 209.98,
+      "end": 210.3,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 211.34,
+      "end": 212.76,
+      "speaker": "SPEAKER_01",
+      "text": "Is she taking about how many a day?"
+    },
+    {
+      "start": 212.9,
+      "end": 213.44,
+      "speaker": "SPEAKER_01",
+      "text": "Five a day?"
+    },
+    {
+      "start": 213.88,
+      "end": 214.36,
+      "speaker": "SPEAKER_00",
+      "text": "What's that?"
+    },
+    {
+      "start": 214.66,
+      "end": 215.78,
+      "speaker": "SPEAKER_01",
+      "text": "How many does she take a day?"
+    },
+    {
+      "start": 216.1,
+      "end": 219.08,
+      "speaker": "SPEAKER_00",
+      "text": "She takes like, I don't know, like six..."
+    },
+    {
+      "start": 219.08,
+      "end": 219.8,
+      "speaker": "SPEAKER_00",
+      "text": "Six a day?"
+    },
+    {
+      "start": 219.94,
+      "end": 220.58,
+      "speaker": "SPEAKER_00",
+      "text": "Like, five a day."
+    },
+    {
+      "start": 220.68,
+      "end": 220.94,
+      "speaker": "SPEAKER_00",
+      "text": "I don't know."
+    },
+    {
+      "start": 221.02,
+      "end": 223.44,
+      "speaker": "SPEAKER_00",
+      "text": "We got into a car accident in Dearborn Heights last year."
+    },
+    {
+      "start": 224.86,
+      "end": 225.22,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 225.9,
+      "end": 227.82,
+      "speaker": "SPEAKER_01",
+      "text": "And you don't know how many she's taken today?"
+    },
+    {
+      "start": 228.14,
+      "end": 228.42,
+      "speaker": "SPEAKER_01",
+      "text": "No."
+    },
+    {
+      "start": 230.14,
+      "end": 230.54,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 230.76,
+      "end": 232.48,
+      "speaker": "SPEAKER_01",
+      "text": "Is there any animals in the house?"
+    },
+    {
+      "start": 233.36,
+      "end": 234.14,
+      "speaker": "SPEAKER_00",
+      "text": "Is there any what?"
+    },
+    {
+      "start": 234.38,
+      "end": 234.98,
+      "speaker": "SPEAKER_01",
+      "text": "Do you need dogs?"
+    },
+    {
+      "start": 235.28,
+      "end": 235.68,
+      "speaker": "SPEAKER_01",
+      "text": "Can't..."
+    },
+    {
+      "start": 235.68,
+      "end": 236.66,
+      "speaker": "SPEAKER_00",
+      "text": "I'll put them away for you."
+    },
+    {
+      "start": 237.0,
+      "end": 237.22,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 237.34,
+      "end": 237.82,
+      "speaker": "SPEAKER_00",
+      "text": "Is the..."
+    },
+    {
+      "start": 237.82,
+      "end": 238.56,
+      "speaker": "SPEAKER_00",
+      "text": "Are dogs open?"
+    },
+    {
+      "start": 239.08,
+      "end": 239.44,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah."
+    },
+    {
+      "start": 239.52,
+      "end": 240.2,
+      "speaker": "SPEAKER_00",
+      "text": "The front door is open."
+    },
+    {
+      "start": 240.28,
+      "end": 240.5,
+      "speaker": "SPEAKER_00",
+      "text": "Come here."
+    },
+    {
+      "start": 240.62,
+      "end": 241.2,
+      "speaker": "SPEAKER_00",
+      "text": "Parts white eyes?"
+    },
+    {
+      "start": 241.92,
+      "end": 242.32,
+      "speaker": "SPEAKER_00",
+      "text": "Pardon?"
+    },
+    {
+      "start": 242.84,
+      "end": 244.36,
+      "speaker": "SPEAKER_01",
+      "text": "Is the porch white eyes?"
+    },
+    {
+      "start": 244.7,
+      "end": 244.86,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah."
+    },
+    {
+      "start": 244.98,
+      "end": 245.76,
+      "speaker": "SPEAKER_00",
+      "text": "The porch light is on."
+    },
+    {
+      "start": 246.32,
+      "end": 247.5,
+      "speaker": "SPEAKER_01",
+      "text": "Are there any weapons in the house?"
+    },
+    {
+      "start": 247.94,
+      "end": 249.38,
+      "speaker": "SPEAKER_00",
+      "text": "Uh, you already asked me that."
+    },
+    {
+      "start": 249.9,
+      "end": 250.56,
+      "speaker": "SPEAKER_01",
+      "text": "And what do you say?"
+    },
+    {
+      "start": 251.04,
+      "end": 251.7,
+      "speaker": "SPEAKER_00",
+      "text": "Uh, yeah."
+    },
+    {
+      "start": 251.88,
+      "end": 252.68,
+      "speaker": "SPEAKER_00",
+      "text": "Well, no, there is."
+    },
+    {
+      "start": 253.2,
+      "end": 253.72,
+      "speaker": "SPEAKER_00",
+      "text": "Where is that?"
+    },
+    {
+      "start": 254.0,
+      "end": 255.48,
+      "speaker": "SPEAKER_00",
+      "text": "It's in my closet."
+    },
+    {
+      "start": 256.06,
+      "end": 256.98,
+      "speaker": "SPEAKER_00",
+      "text": "Is that in the Mac bedroom?"
+    },
+    {
+      "start": 257.38,
+      "end": 257.6,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah."
+    },
+    {
+      "start": 257.6,
+      "end": 258.5,
+      "speaker": "SPEAKER_00",
+      "text": "Is that in the front bedroom?"
+    },
+    {
+      "start": 258.88,
+      "end": 259.5,
+      "speaker": "SPEAKER_01",
+      "text": "In the front bedroom?"
+    },
+    {
+      "start": 259.78,
+      "end": 259.88,
+      "speaker": "SPEAKER_01",
+      "text": "Yeah."
+    },
+    {
+      "start": 261.68,
+      "end": 262.76,
+      "speaker": "SPEAKER_00",
+      "text": "What's going on?"
+    },
+    {
+      "start": 265.96000000000004,
+      "end": 266.36,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 268.76000000000005,
+      "end": 269.16,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 271.04,
+      "end": 271.44,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 271.6,
+      "end": 271.6,
+      "speaker": "SPEAKER_00",
+      "text": ""
+    },
+    {
+      "start": 271.9,
+      "end": 271.92,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 271.92,
+      "end": 271.98,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 271.98,
+      "end": 272.04,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 272.04,
+      "end": 272.18,
+      "speaker": "SPEAKER_00",
+      "text": "Come on."
+    },
+    {
+      "start": 272.38,
+      "end": 272.62,
+      "speaker": "SPEAKER_00",
+      "text": "Ginger."
+    },
+    {
+      "start": 276.40000000000003,
+      "end": 277.84,
+      "speaker": "SPEAKER_00",
+      "text": "Where is the FDA right now?"
+    },
+    {
+      "start": 278.14,
+      "end": 279.22,
+      "speaker": "SPEAKER_01",
+      "text": "They're on the way, sir."
+    },
+    {
+      "start": 281.5,
+      "end": 283.26,
+      "speaker": "SPEAKER_01",
+      "text": "Do you guys do something like a basis?"
+    },
+    {
+      "start": 283.7,
+      "end": 285.52,
+      "speaker": "SPEAKER_00",
+      "text": "No, this is the first time we've ever done it."
+    },
+    {
+      "start": 286.12,
+      "end": 287.58,
+      "speaker": "SPEAKER_01",
+      "text": "Do you remember that mere one number five?"
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "speaker": "SPEAKER_00",
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "speaker": "SPEAKER_00",
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "speaker": "SPEAKER_00",
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "speaker": "SPEAKER_00",
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "speaker": "SPEAKER_00",
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "speaker": "SPEAKER_00",
+      "text": ""
+    },
+    {
+      "start": 288.34,
+      "end": 289.64,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah, I have."
+    },
+    {
+      "start": 289.88,
+      "end": 291.98,
+      "speaker": "SPEAKER_01",
+      "text": "You haven't you've never had this reaction to it before?"
+    },
+    {
+      "start": 292.32,
+      "end": 292.62,
+      "speaker": "SPEAKER_00",
+      "text": "Whatever."
+    },
+    {
+      "start": 295.08,
+      "end": 296.5,
+      "speaker": "SPEAKER_00",
+      "text": "What's going on the Red Wing game?"
+    },
+    {
+      "start": 297.86,
+      "end": 298.16,
+      "speaker": "SPEAKER_00",
+      "text": "What?"
+    },
+    {
+      "start": 298.48,
+      "end": 299.82,
+      "speaker": "SPEAKER_00",
+      "text": "What's going on the Red Wing game?"
+    },
+    {
+      "start": 300.36,
+      "end": 301.3,
+      "speaker": "SPEAKER_01",
+      "text": "I'm not cool."
+    },
+    {
+      "start": 301.48,
+      "end": 302.36,
+      "speaker": "SPEAKER_01",
+      "text": "I don't want the Red Wing."
+    },
+    {
+      "start": 303.02,
+      "end": 303.5,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 303.7,
+      "end": 307.1,
+      "speaker": "SPEAKER_00",
+      "text": "I just want to make sure this isn't some type of like hallucination that I'm having."
+    },
+    {
+      "start": 307.36,
+      "end": 308.56,
+      "speaker": "SPEAKER_01",
+      "text": "Oh, why was it score say?"
+    },
+    {
+      "start": 309.56,
+      "end": 310.64,
+      "speaker": "SPEAKER_00",
+      "text": "Uh, three to three."
+    },
+    {
+      "start": 311.28,
+      "end": 312.46,
+      "speaker": "SPEAKER_01",
+      "text": "When Cheetos are done?"
+    },
+    {
+      "start": 313.12,
+      "end": 314.84,
+      "speaker": "SPEAKER_00",
+      "text": "Uh, channel two."
+    },
+    {
+      "start": 317.9,
+      "end": 319.86,
+      "speaker": "SPEAKER_01",
+      "text": "Uh, it's two to two."
+    },
+    {
+      "start": 319.86,
+      "end": 320.22,
+      "speaker": "SPEAKER_00",
+      "text": "Huh?"
+    },
+    {
+      "start": 320.48,
+      "end": 321.26,
+      "speaker": "SPEAKER_01",
+      "text": "It's two to two."
+    },
+    {
+      "start": 321.54,
+      "end": 321.82,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 322.08,
+      "end": 323.92,
+      "speaker": "SPEAKER_00",
+      "text": "Your police tell your officers they just passed me."
+    },
+    {
+      "start": 324.68,
+      "end": 324.92,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 324.98,
+      "end": 325.78,
+      "speaker": "SPEAKER_01",
+      "text": "They just passed you?"
+    },
+    {
+      "start": 326.0,
+      "end": 326.18,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah."
+    },
+    {
+      "start": 326.74,
+      "end": 327.0,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 327.12,
+      "end": 328.76,
+      "speaker": "SPEAKER_01",
+      "text": "But you're a..."
+    },
+    {
+      "start": 331.18,
+      "end": 331.66,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 331.86,
+      "end": 332.56,
+      "speaker": "SPEAKER_01",
+      "text": "We'll move on them now."
+    },
+    {
+      "start": 332.84,
+      "end": 332.9,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 333.16,
+      "end": 334.28,
+      "speaker": "SPEAKER_01",
+      "text": "You can't find a flag."
+    },
+    {
+      "start": 334.28,
+      "end": 334.6,
+      "speaker": "SPEAKER_01",
+      "text": "I'm not."
+    },
+    {
+      "start": 334.76,
+      "end": 335.0,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 335.24,
+      "end": 335.54,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 336.02,
+      "end": 337.36,
+      "speaker": "SPEAKER_00",
+      "text": "My mother-in-law just got here too."
+    },
+    {
+      "start": 337.74,
+      "end": 338.02,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 338.5,
+      "end": 338.78,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 339.04,
+      "end": 339.34,
+      "speaker": "SPEAKER_01",
+      "text": "Alrighty."
+    },
+    {
+      "start": 339.64,
+      "end": 339.82,
+      "speaker": "SPEAKER_00",
+      "text": "Alrighty."
+    },
+    {
+      "start": 340.22,
+      "end": 340.42,
+      "speaker": "SPEAKER_00",
+      "text": "Bye-bye."
+    }
+  ],
+  "whisper_segments": [
+    {
+      "start": 0.0,
+      "end": 3.32,
+      "text": "We've removed some personal information from the following 9-1-1 call."
+    },
+    {
+      "start": 3.7,
+      "end": 6.24,
+      "text": "You will hear telling where the information has been removed."
+    },
+    {
+      "start": 6.56,
+      "end": 7.34,
+      "text": "Boy, we..."
+    },
+    {
+      "start": 8.020000000000003,
+      "end": 9.08,
+      "text": "My soul's asleep."
+    },
+    {
+      "start": 10.22,
+      "end": 11.16,
+      "text": "Do you want to hit the emergency?"
+    },
+    {
+      "start": 11.74,
+      "end": 15.14,
+      "text": "Yeah, can you please send rescue to..."
+    },
+    {
+      "start": 16.980000000000004,
+      "end": 19.6,
+      "text": "I think I'm having an overdose of the soul as my wife."
+    },
+    {
+      "start": 20.14,
+      "end": 21.12,
+      "text": "Okay, you and your wife?"
+    },
+    {
+      "start": 21.4,
+      "end": 21.56,
+      "text": "Yes."
+    },
+    {
+      "start": 22.8,
+      "end": 23.7,
+      "text": "Overnose of what?"
+    },
+    {
+      "start": 24.02,
+      "end": 24.46,
+      "text": "Marijuana."
+    },
+    {
+      "start": 24.94,
+      "end": 26.3,
+      "text": "I don't know if it had something in it."
+    },
+    {
+      "start": 27.380000000000003,
+      "end": 27.82,
+      "text": "Okay."
+    },
+    {
+      "start": 28.18,
+      "end": 29.14,
+      "text": "Can you please send rescue?"
+    },
+    {
+      "start": 29.14,
+      "end": 30.24,
+      "text": "Okay, how old are you?"
+    },
+    {
+      "start": 30.48,
+      "end": 35.44,
+      "text": "I'm 29 years old and my wife is 26."
+    },
+    {
+      "start": 35.66,
+      "end": 36.22,
+      "text": "Please come."
+    },
+    {
+      "start": 36.44,
+      "end": 36.84,
+      "text": "26?"
+    },
+    {
+      "start": 37.22,
+      "end": 37.76,
+      "text": "Yes, please."
+    },
+    {
+      "start": 38.08,
+      "end": 39.24,
+      "text": "Can you guys been drinking also?"
+    },
+    {
+      "start": 39.86,
+      "end": 40.14,
+      "text": "What?"
+    },
+    {
+      "start": 40.5,
+      "end": 41.78,
+      "text": "Can you guys been drinking today too?"
+    },
+    {
+      "start": 42.38,
+      "end": 43.18,
+      "text": "No, that's it."
+    },
+    {
+      "start": 43.72,
+      "end": 45.78,
+      "text": "No, is there any weapons in the house?"
+    },
+    {
+      "start": 46.1,
+      "end": 47.3,
+      "text": "No, please come."
+    },
+    {
+      "start": 47.58,
+      "end": 49.14,
+      "text": "Okay, Marijuana, why..."
+    },
+    {
+      "start": 49.76,
+      "end": 52.36,
+      "text": "You guys have fever, anything?"
+    },
+    {
+      "start": 52.66,
+      "end": 53.86,
+      "text": "No, I'm just..."
+    },
+    {
+      "start": 53.86,
+      "end": 54.66,
+      "text": "I think we're dying."
+    },
+    {
+      "start": 55.76,
+      "end": 57.16,
+      "text": "Okay, how much did you guys have?"
+    },
+    {
+      "start": 57.16,
+      "end": 60.48,
+      "text": "I don't know, we made brownies and I think we're dead."
+    },
+    {
+      "start": 60.74,
+      "end": 61.44,
+      "text": "I really do."
+    },
+    {
+      "start": 61.68,
+      "end": 64.14,
+      "text": "Okay, how much did you put in the brownies?"
+    },
+    {
+      "start": 64.44,
+      "end": 65.06,
+      "text": "I don't know."
+    },
+    {
+      "start": 65.4,
+      "end": 66.46,
+      "text": "Was it in bags?"
+    },
+    {
+      "start": 67.0,
+      "end": 67.86,
+      "text": "Who made the brownies?"
+    },
+    {
+      "start": 69.06,
+      "end": 70.34,
+      "text": "My wife and I did."
+    },
+    {
+      "start": 71.3,
+      "end": 71.96,
+      "text": "Cuba, come here."
+    },
+    {
+      "start": 72.42,
+      "end": 73.48,
+      "text": "Okay, get her."
+    },
+    {
+      "start": 74.24,
+      "end": 76.78,
+      "text": "She's on the living room ground right now."
+    },
+    {
+      "start": 76.9,
+      "end": 77.52,
+      "text": "Is she breathing?"
+    },
+    {
+      "start": 78.0,
+      "end": 79.14,
+      "text": "She's barely breathing."
+    },
+    {
+      "start": 79.4,
+      "end": 79.94,
+      "text": "Is she awake?"
+    },
+    {
+      "start": 80.38,
+      "end": 81.46,
+      "text": "I think so."
+    },
+    {
+      "start": 82.78,
+      "end": 83.76,
+      "text": "Okay, can you look?"
+    },
+    {
+      "start": 84.38,
+      "end": 84.7,
+      "text": "Pardon?"
+    },
+    {
+      "start": 85.12,
+      "end": 85.9,
+      "text": "Can you look?"
+    },
+    {
+      "start": 86.43999999999998,
+      "end": 88.96,
+      "text": "Yeah, I can feel she's laying right down in front of me."
+    },
+    {
+      "start": 89.08,
+      "end": 91.42,
+      "text": "Time is going by really, really, really, really slow."
+    },
+    {
+      "start": 91.84,
+      "end": 94.28,
+      "text": "Okay, what I'm on the phone with you is you don't end here."
+    },
+    {
+      "start": 94.62,
+      "end": 97.12,
+      "text": "Do you know how much I've met you bought and put in the brownies?"
+    },
+    {
+      "start": 97.62,
+      "end": 97.92,
+      "text": "Pardon?"
+    },
+    {
+      "start": 98.36,
+      "end": 99.4,
+      "text": "How much did you buy?"
+    },
+    {
+      "start": 99.9,
+      "end": 100.36,
+      "text": "I don't..."
+    },
+    {
+      "start": 100.9,
+      "end": 102.04,
+      "text": "Just please send rescue."
+    },
+    {
+      "start": 102.16,
+      "end": 105.72,
+      "text": "There I'm the way, but I'm trying to figure how much you bought and put into the brownies, sir."
+    },
+    {
+      "start": 105.94,
+      "end": 107.54,
+      "text": "It's probably like a quarter ounce total."
+    },
+    {
+      "start": 107.86,
+      "end": 109.7,
+      "text": "A quarter ounce total into the brownies?"
+    },
+    {
+      "start": 109.76,
+      "end": 111.08,
+      "text": "Did you guys eat all the brownies?"
+    },
+    {
+      "start": 111.84,
+      "end": 112.66,
+      "text": "Yeah, we did."
+    },
+    {
+      "start": 116.24,
+      "end": 116.72,
+      "text": "Okay."
+    },
+    {
+      "start": 117.2,
+      "end": 118.64,
+      "text": "And you ate all the..."
+    },
+    {
+      "start": 118.64,
+      "end": 120.92,
+      "text": "Bahamut was a big patch, a little patch."
+    },
+    {
+      "start": 121.24,
+      "end": 122.84,
+      "text": "It was a quarter ounce."
+    },
+    {
+      "start": 123.52,
+      "end": 126.52,
+      "text": "Okay, but brownie wise, how many people do you guys think you guys had?"
+    },
+    {
+      "start": 127.02,
+      "end": 127.8,
+      "text": "I don't know."
+    },
+    {
+      "start": 127.92,
+      "end": 129.72,
+      "text": "I probably had like a small chance."
+    },
+    {
+      "start": 130.36,
+      "end": 131.1,
+      "text": "Please come."
+    },
+    {
+      "start": 131.44,
+      "end": 131.7,
+      "text": "It's..."
+    },
+    {
+      "start": 131.7,
+      "end": 132.44,
+      "text": "What time is it?"
+    },
+    {
+      "start": 133.2,
+      "end": 134.34,
+      "text": "It's 9.37."
+    },
+    {
+      "start": 134.66,
+      "end": 136.78,
+      "text": "When did you guys ate last night at the brownies?"
+    },
+    {
+      "start": 137.2,
+      "end": 138.84,
+      "text": "Probably like an hour and a half ago."
+    },
+    {
+      "start": 140.14,
+      "end": 142.84,
+      "text": "Okay, is your wife still breathing?"
+    },
+    {
+      "start": 142.84,
+      "end": 144.0,
+      "text": "Yeah, she is."
+    },
+    {
+      "start": 144.42,
+      "end": 145.94,
+      "text": "She's kneeling down in front of me."
+    },
+    {
+      "start": 146.6,
+      "end": 147.0,
+      "text": "Okay."
+    },
+    {
+      "start": 147.34,
+      "end": 147.62,
+      "text": "I know."
+    },
+    {
+      "start": 147.86,
+      "end": 148.4,
+      "text": "We have to wait."
+    },
+    {
+      "start": 148.92,
+      "end": 150.94,
+      "text": "Okay, is she Stacy Sanchez?"
+    },
+    {
+      "start": 151.54,
+      "end": 151.84,
+      "text": "Yes."
+    },
+    {
+      "start": 152.38,
+      "end": 153.06,
+      "text": "What's your name?"
+    },
+    {
+      "start": 153.42,
+      "end": 154.06,
+      "text": "My name is Edward."
+    },
+    {
+      "start": 154.4,
+      "end": 155.4,
+      "text": "Your Edward Sanchez?"
+    },
+    {
+      "start": 158.56,
+      "end": 158.96,
+      "text": "Okay."
+    },
+    {
+      "start": 159.3,
+      "end": 161.06,
+      "text": "And did you guys have any other photos, right?"
+    },
+    {
+      "start": 161.28,
+      "end": 161.64,
+      "text": "Do you know what?"
+    },
+    {
+      "start": 162.02,
+      "end": 162.28,
+      "text": "Pardon?"
+    },
+    {
+      "start": 162.98,
+      "end": 163.3,
+      "text": "Do you know?"
+    },
+    {
+      "start": 163.86,
+      "end": 165.82,
+      "text": "Did you guys do anything else today besides marijuana?"
+    },
+    {
+      "start": 166.28,
+      "end": 166.84,
+      "text": "No, that's it."
+    },
+    {
+      "start": 166.92,
+      "end": 167.74,
+      "text": "But I don't know what..."
+    },
+    {
+      "start": 167.74,
+      "end": 169.16,
+      "text": "Was it the marijuana could have been..."
+    },
+    {
+      "start": 169.16,
+      "end": 170.4,
+      "text": "There could have been something in the marijuana."
+    },
+    {
+      "start": 172.18,
+      "end": 172.58,
+      "text": "Okay."
+    },
+    {
+      "start": 172.58,
+      "end": 174.82,
+      "text": "Are you guys any sort of prescription pills?"
+    },
+    {
+      "start": 175.02,
+      "end": 176.2,
+      "text": "Are you guys taking it for other medications?"
+    },
+    {
+      "start": 176.76,
+      "end": 177.56,
+      "text": "No, no."
+    },
+    {
+      "start": 177.72,
+      "end": 179.58,
+      "text": "My wife takes..."
+    },
+    {
+      "start": 180.98,
+      "end": 181.68,
+      "text": "Vykiden though."
+    },
+    {
+      "start": 182.18,
+      "end": 183.16,
+      "text": "And did she take it in today?"
+    },
+    {
+      "start": 184.26,
+      "end": 185.4,
+      "text": "No, I don't think so."
+    },
+    {
+      "start": 186.7,
+      "end": 187.78,
+      "text": "Okay, where's the vykiden?"
+    },
+    {
+      "start": 188.56,
+      "end": 190.7,
+      "text": "The vykiden is..."
+    },
+    {
+      "start": 191.57999999999998,
+      "end": 192.92,
+      "text": "It's in our medicine cabinet."
+    },
+    {
+      "start": 193.62,
+      "end": 194.7,
+      "text": "Okay, but how many..."
+    },
+    {
+      "start": 194.7,
+      "end": 196.2,
+      "text": "Does she take a regular basis?"
+    },
+    {
+      "start": 196.78,
+      "end": 197.02,
+      "text": "Yeah."
+    },
+    {
+      "start": 197.56,
+      "end": 198.96,
+      "text": "How many does she take on a regular basis?"
+    },
+    {
+      "start": 199.4,
+      "end": 200.48,
+      "text": "Two or eight?"
+    },
+    {
+      "start": 200.48,
+      "end": 201.92,
+      "text": "I don't know, like, five a day."
+    },
+    {
+      "start": 202.1,
+      "end": 202.64,
+      "text": "Please take..."
+    },
+    {
+      "start": 202.64,
+      "end": 203.9,
+      "text": "She takes about five a day?"
+    },
+    {
+      "start": 204.06,
+      "end": 204.28,
+      "text": "Yeah."
+    },
+    {
+      "start": 204.8,
+      "end": 205.52,
+      "text": "Are you coming?"
+    },
+    {
+      "start": 205.86,
+      "end": 206.64,
+      "text": "Yeah, no, I'm the wait."
+    },
+    {
+      "start": 206.76,
+      "end": 207.96,
+      "text": "They've been here for two minutes."
+    },
+    {
+      "start": 208.1,
+      "end": 209.56,
+      "text": "There's no nine thirty-eight."
+    },
+    {
+      "start": 209.98,
+      "end": 210.3,
+      "text": "Okay."
+    },
+    {
+      "start": 211.34,
+      "end": 212.76,
+      "text": "Is she taking about how many a day?"
+    },
+    {
+      "start": 212.9,
+      "end": 213.44,
+      "text": "Five a day?"
+    },
+    {
+      "start": 213.88,
+      "end": 214.36,
+      "text": "What's that?"
+    },
+    {
+      "start": 214.66,
+      "end": 215.78,
+      "text": "How many does she take a day?"
+    },
+    {
+      "start": 216.1,
+      "end": 219.08,
+      "text": "She takes like, I don't know, like six..."
+    },
+    {
+      "start": 219.08,
+      "end": 219.8,
+      "text": "Six a day?"
+    },
+    {
+      "start": 219.94,
+      "end": 220.58,
+      "text": "Like, five a day."
+    },
+    {
+      "start": 220.68,
+      "end": 220.94,
+      "text": "I don't know."
+    },
+    {
+      "start": 221.02,
+      "end": 223.44,
+      "text": "We got into a car accident in Dearborn Heights last year."
+    },
+    {
+      "start": 224.86,
+      "end": 225.22,
+      "text": "Okay."
+    },
+    {
+      "start": 225.9,
+      "end": 227.82,
+      "text": "And you don't know how many she's taken today?"
+    },
+    {
+      "start": 228.14,
+      "end": 228.42,
+      "text": "No."
+    },
+    {
+      "start": 230.14,
+      "end": 230.54,
+      "text": "Okay."
+    },
+    {
+      "start": 230.76,
+      "end": 232.48,
+      "text": "Is there any animals in the house?"
+    },
+    {
+      "start": 233.36,
+      "end": 234.14,
+      "text": "Is there any what?"
+    },
+    {
+      "start": 234.38,
+      "end": 234.98,
+      "text": "Do you need dogs?"
+    },
+    {
+      "start": 235.28,
+      "end": 235.68,
+      "text": "Can't..."
+    },
+    {
+      "start": 235.68,
+      "end": 236.66,
+      "text": "I'll put them away for you."
+    },
+    {
+      "start": 237.0,
+      "end": 237.22,
+      "text": "Okay."
+    },
+    {
+      "start": 237.34,
+      "end": 237.82,
+      "text": "Is the..."
+    },
+    {
+      "start": 237.82,
+      "end": 238.56,
+      "text": "Are dogs open?"
+    },
+    {
+      "start": 239.08,
+      "end": 239.44,
+      "text": "Yeah."
+    },
+    {
+      "start": 239.52,
+      "end": 240.2,
+      "text": "The front door is open."
+    },
+    {
+      "start": 240.28,
+      "end": 240.5,
+      "text": "Come here."
+    },
+    {
+      "start": 240.62,
+      "end": 241.2,
+      "text": "Parts white eyes?"
+    },
+    {
+      "start": 241.92,
+      "end": 242.32,
+      "text": "Pardon?"
+    },
+    {
+      "start": 242.84,
+      "end": 244.36,
+      "text": "Is the porch white eyes?"
+    },
+    {
+      "start": 244.7,
+      "end": 244.86,
+      "text": "Yeah."
+    },
+    {
+      "start": 244.98,
+      "end": 245.76,
+      "text": "The porch light is on."
+    },
+    {
+      "start": 246.32,
+      "end": 247.5,
+      "text": "Are there any weapons in the house?"
+    },
+    {
+      "start": 247.94,
+      "end": 249.38,
+      "text": "Uh, you already asked me that."
+    },
+    {
+      "start": 249.9,
+      "end": 250.56,
+      "text": "And what do you say?"
+    },
+    {
+      "start": 251.04,
+      "end": 251.7,
+      "text": "Uh, yeah."
+    },
+    {
+      "start": 251.88,
+      "end": 252.68,
+      "text": "Well, no, there is."
+    },
+    {
+      "start": 253.2,
+      "end": 253.72,
+      "text": "Where is that?"
+    },
+    {
+      "start": 254.0,
+      "end": 255.48,
+      "text": "It's in my closet."
+    },
+    {
+      "start": 256.06,
+      "end": 256.98,
+      "text": "Is that in the Mac bedroom?"
+    },
+    {
+      "start": 257.38,
+      "end": 257.6,
+      "text": "Yeah."
+    },
+    {
+      "start": 257.6,
+      "end": 258.5,
+      "text": "Is that in the front bedroom?"
+    },
+    {
+      "start": 258.88,
+      "end": 259.5,
+      "text": "In the front bedroom?"
+    },
+    {
+      "start": 259.78,
+      "end": 259.88,
+      "text": "Yeah."
+    },
+    {
+      "start": 261.68,
+      "end": 262.76,
+      "text": "What's going on?"
+    },
+    {
+      "start": 265.96000000000004,
+      "end": 266.36,
+      "text": "Okay."
+    },
+    {
+      "start": 268.76000000000005,
+      "end": 269.16,
+      "text": "Okay."
+    },
+    {
+      "start": 271.04,
+      "end": 271.44,
+      "text": "Okay."
+    },
+    {
+      "start": 271.6,
+      "end": 271.6,
+      "text": ""
+    },
+    {
+      "start": 271.9,
+      "end": 271.92,
+      "text": "Okay."
+    },
+    {
+      "start": 271.92,
+      "end": 271.98,
+      "text": "Okay."
+    },
+    {
+      "start": 271.98,
+      "end": 272.04,
+      "text": "Okay."
+    },
+    {
+      "start": 272.04,
+      "end": 272.18,
+      "text": "Come on."
+    },
+    {
+      "start": 272.38,
+      "end": 272.62,
+      "text": "Ginger."
+    },
+    {
+      "start": 276.40000000000003,
+      "end": 277.84,
+      "text": "Where is the FDA right now?"
+    },
+    {
+      "start": 278.14,
+      "end": 279.22,
+      "text": "They're on the way, sir."
+    },
+    {
+      "start": 281.5,
+      "end": 283.26,
+      "text": "Do you guys do something like a basis?"
+    },
+    {
+      "start": 283.7,
+      "end": 285.52,
+      "text": "No, this is the first time we've ever done it."
+    },
+    {
+      "start": 286.12,
+      "end": 287.58,
+      "text": "Do you remember that mere one number five?"
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "text": ""
+    },
+    {
+      "start": 287.58,
+      "end": 287.58,
+      "text": ""
+    },
+    {
+      "start": 288.34,
+      "end": 289.64,
+      "text": "Yeah, I have."
+    },
+    {
+      "start": 289.88,
+      "end": 291.98,
+      "text": "You haven't you've never had this reaction to it before?"
+    },
+    {
+      "start": 292.32,
+      "end": 292.62,
+      "text": "Whatever."
+    },
+    {
+      "start": 295.08,
+      "end": 296.5,
+      "text": "What's going on the Red Wing game?"
+    },
+    {
+      "start": 297.86,
+      "end": 298.16,
+      "text": "What?"
+    },
+    {
+      "start": 298.48,
+      "end": 299.82,
+      "text": "What's going on the Red Wing game?"
+    },
+    {
+      "start": 300.36,
+      "end": 301.3,
+      "text": "I'm not cool."
+    },
+    {
+      "start": 301.48,
+      "end": 302.36,
+      "text": "I don't want the Red Wing."
+    },
+    {
+      "start": 303.02,
+      "end": 303.5,
+      "text": "Okay."
+    },
+    {
+      "start": 303.7,
+      "end": 307.1,
+      "text": "I just want to make sure this isn't some type of like hallucination that I'm having."
+    },
+    {
+      "start": 307.36,
+      "end": 308.56,
+      "text": "Oh, why was it score say?"
+    },
+    {
+      "start": 309.56,
+      "end": 310.64,
+      "text": "Uh, three to three."
+    },
+    {
+      "start": 311.28,
+      "end": 312.46,
+      "text": "When Cheetos are done?"
+    },
+    {
+      "start": 313.12,
+      "end": 314.84,
+      "text": "Uh, channel two."
+    },
+    {
+      "start": 317.9,
+      "end": 319.86,
+      "text": "Uh, it's two to two."
+    },
+    {
+      "start": 319.86,
+      "end": 320.22,
+      "text": "Huh?"
+    },
+    {
+      "start": 320.48,
+      "end": 321.26,
+      "text": "It's two to two."
+    },
+    {
+      "start": 321.54,
+      "end": 321.82,
+      "text": "Okay."
+    },
+    {
+      "start": 322.08,
+      "end": 323.92,
+      "text": "Your police tell your officers they just passed me."
+    },
+    {
+      "start": 324.68,
+      "end": 324.92,
+      "text": "Okay."
+    },
+    {
+      "start": 324.98,
+      "end": 325.78,
+      "text": "They just passed you?"
+    },
+    {
+      "start": 326.0,
+      "end": 326.18,
+      "text": "Yeah."
+    },
+    {
+      "start": 326.74,
+      "end": 327.0,
+      "text": "Okay."
+    },
+    {
+      "start": 327.12,
+      "end": 328.76,
+      "text": "But you're a..."
+    },
+    {
+      "start": 331.18,
+      "end": 331.66,
+      "text": "Okay."
+    },
+    {
+      "start": 331.86,
+      "end": 332.56,
+      "text": "We'll move on them now."
+    },
+    {
+      "start": 332.84,
+      "end": 332.9,
+      "text": "Okay."
+    },
+    {
+      "start": 333.16,
+      "end": 334.28,
+      "text": "You can't find a flag."
+    },
+    {
+      "start": 334.28,
+      "end": 334.6,
+      "text": "I'm not."
+    },
+    {
+      "start": 334.76,
+      "end": 335.0,
+      "text": "Okay."
+    },
+    {
+      "start": 335.24,
+      "end": 335.54,
+      "text": "Okay."
+    },
+    {
+      "start": 336.02,
+      "end": 337.36,
+      "text": "My mother-in-law just got here too."
+    },
+    {
+      "start": 337.74,
+      "end": 338.02,
+      "text": "Okay."
+    },
+    {
+      "start": 338.5,
+      "end": 338.78,
+      "text": "Okay."
+    },
+    {
+      "start": 339.04,
+      "end": 339.34,
+      "text": "Alrighty."
+    },
+    {
+      "start": 339.64,
+      "end": 339.82,
+      "text": "Alrighty."
+    },
+    {
+      "start": 340.22,
+      "end": 340.42,
+      "text": "Bye-bye."
+    }
+  ]
+}

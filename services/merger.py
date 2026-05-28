@@ -33,4 +33,45 @@ def merge_whisper_first(whis_seg,pyann_seg):
         })
     return merged_seg
 
+def combine_same_speaker_segments(
+        segments,
+        max_gap=2.0
+):
+
+    if not segments:
+        return []
+
+    combined = []
+
+    current = segments[0]
+
+    for seg in segments[1:]:
+
+        gap = (
+                seg["start"]
+                - current["end"]
+        )
+
+        # merge nearby same-speaker segments
+        if (
+                seg["speaker"]
+                == current["speaker"]
+                and gap <= max_gap
+        ):
+
+            current["text"] += (
+                    " " + seg["text"]
+            )
+
+            current["end"] = seg["end"]
+
+        else:
+
+            combined.append(current)
+
+            current = seg
+
+    combined.append(current)
+
+    return combined
 

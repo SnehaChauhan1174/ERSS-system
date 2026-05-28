@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "audio_file": "D:\\InternshipProject\\ERSS Project\\audio\\call_10.mp3",
+    "processed_at": "20260527_234727"
+  },
+  "summary": {
+    "summary": "A caller reported that their girlfriend is experiencing breathing difficulties and they are unable to leave a building. The caller seems disoriented and unsure of their location. They mention being about a quarter mile from an unknown location. The caller also mentions that someone pointed at them and that they don't speak English. The situation is unclear, but the caller is seeking help. The caller's girlfriend is the only mentioned casualty, and her condition is unclear. The caller is asking for assistance, but the exact nature of the emergency is unclear.",
+    "incident_type": "Medical Emergency",
+    "location": "Unknown",
+    "casualties": "1, condition unclear",
+    "caller_count": "2",
+    "key_details": [
+      "Girlfriend experiencing breathing difficulties",
+      "Caller unsure of location",
+      "Someone pointed at them"
+    ],
+    "priority": "HIGH",
+    "recommended_response": "Ambulance and police units"
+  },
+  "diarized_transcript": [
+    {
+      "start": 0.0,
+      "end": 4.78,
+      "speaker": "SPEAKER_01",
+      "text": "Ma'am, my pickup was born. I had to go find it."
+    },
+    {
+      "start": 5.62,
+      "end": 10.52,
+      "speaker": "SPEAKER_01",
+      "text": "Please help us. My girlfriend is really breathing out cold."
+    },
+    {
+      "start": 11.16,
+      "end": 12.52,
+      "speaker": "SPEAKER_01",
+      "text": "She can't get out of here."
+    },
+    {
+      "start": 12.82,
+      "end": 14.22,
+      "speaker": "SPEAKER_01",
+      "text": "She can't get out of there."
+    },
+    {
+      "start": 14.64,
+      "end": 17.96,
+      "speaker": "SPEAKER_01",
+      "text": "We can't get out. We don't know what sleep out of her."
+    },
+    {
+      "start": 19.34,
+      "end": 22.78,
+      "speaker": "SPEAKER_01",
+      "text": "They don't speak English or anything. They don't talk to us."
+    },
+    {
+      "start": 23.4,
+      "end": 23.6,
+      "speaker": "SPEAKER_01",
+      "text": "Who?"
+    },
+    {
+      "start": 24.12,
+      "end": 26.14,
+      "speaker": "SPEAKER_01",
+      "text": "The suspect pointed at us."
+    },
+    {
+      "start": 26.14,
+      "end": 27.76,
+      "speaker": "SPEAKER_01",
+      "text": "So somebody locked you in this building?"
+    },
+    {
+      "start": 27.76,
+      "end": 30.66,
+      "speaker": "SPEAKER_01",
+      "text": "No. But we don't know this building."
+    },
+    {
+      "start": 33.06,
+      "end": 37.2,
+      "speaker": "SPEAKER_01",
+      "text": "And if we took the box from the beginning of this building and walking,"
+    },
+    {
+      "start": 37.48,
+      "end": 40.04,
+      "speaker": "SPEAKER_01",
+      "text": "I cannot guarantee it will make it for free."
+    },
+    {
+      "start": 41.12,
+      "end": 45.02,
+      "speaker": "SPEAKER_01",
+      "text": "She's again a GCK. She cuts her cat's place and she's the problem."
+    },
+    {
+      "start": 46.16,
+      "end": 50.14,
+      "speaker": "SPEAKER_00",
+      "text": "So you have 70 space in poppetons and you don't have to walk very far to get somewhere."
+    },
+    {
+      "start": 50.58,
+      "end": 51.62,
+      "speaker": "SPEAKER_00",
+      "text": "Okay. So I get to know her."
+    },
+    {
+      "start": 52.36,
+      "end": 55.760000000000005,
+      "speaker": "SPEAKER_01",
+      "text": "Yeah, but we're at here far and a good quarter mile from..."
+    },
+    {
+      "start": 56.300000000000004,
+      "end": 59.24,
+      "speaker": "SPEAKER_01",
+      "text": "Maybe a quarter mile from side-fifth. That's all I'm saying."
+    },
+    {
+      "start": 59.62,
+      "end": 61.76,
+      "speaker": "SPEAKER_01",
+      "text": "Can you please just go in a little bit?"
+    },
+    {
+      "start": 62.18,
+      "end": 64.06,
+      "speaker": "SPEAKER_00",
+      "text": "No, I can't help you. Can I help yourself?"
+    },
+    {
+      "start": 64.42,
+      "end": 64.6,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    }
+  ],
+  "whisper_segments": [
+    {
+      "start": 0.0,
+      "end": 4.78,
+      "text": "Ma'am, my pickup was born. I had to go find it."
+    },
+    {
+      "start": 5.62,
+      "end": 10.52,
+      "text": "Please help us. My girlfriend is really breathing out cold."
+    },
+    {
+      "start": 11.16,
+      "end": 12.52,
+      "text": "She can't get out of here."
+    },
+    {
+      "start": 12.82,
+      "end": 14.22,
+      "text": "She can't get out of there."
+    },
+    {
+      "start": 14.64,
+      "end": 17.96,
+      "text": "We can't get out. We don't know what sleep out of her."
+    },
+    {
+      "start": 19.34,
+      "end": 22.78,
+      "text": "They don't speak English or anything. They don't talk to us."
+    },
+    {
+      "start": 23.4,
+      "end": 23.6,
+      "text": "Who?"
+    },
+    {
+      "start": 24.12,
+      "end": 26.14,
+      "text": "The suspect pointed at us."
+    },
+    {
+      "start": 26.14,
+      "end": 27.76,
+      "text": "So somebody locked you in this building?"
+    },
+    {
+      "start": 27.76,
+      "end": 30.66,
+      "text": "No. But we don't know this building."
+    },
+    {
+      "start": 33.06,
+      "end": 37.2,
+      "text": "And if we took the box from the beginning of this building and walking,"
+    },
+    {
+      "start": 37.48,
+      "end": 40.04,
+      "text": "I cannot guarantee it will make it for free."
+    },
+    {
+      "start": 41.12,
+      "end": 45.02,
+      "text": "She's again a GCK. She cuts her cat's place and she's the problem."
+    },
+    {
+      "start": 46.16,
+      "end": 50.14,
+      "text": "So you have 70 space in poppetons and you don't have to walk very far to get somewhere."
+    },
+    {
+      "start": 50.58,
+      "end": 51.62,
+      "text": "Okay. So I get to know her."
+    },
+    {
+      "start": 52.36,
+      "end": 55.760000000000005,
+      "text": "Yeah, but we're at here far and a good quarter mile from..."
+    },
+    {
+      "start": 56.300000000000004,
+      "end": 59.24,
+      "text": "Maybe a quarter mile from side-fifth. That's all I'm saying."
+    },
+    {
+      "start": 59.62,
+      "end": 61.76,
+      "text": "Can you please just go in a little bit?"
+    },
+    {
+      "start": 62.18,
+      "end": 64.06,
+      "text": "No, I can't help you. Can I help yourself?"
+    },
+    {
+      "start": 64.42,
+      "end": 64.6,
+      "text": "Okay."
+    }
+  ]
+}

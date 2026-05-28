@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "audio_file": "D:\\InternshipProject\\ERSS Project\\audio\\pool_save_2mins.mp3",
+    "processed_at": "20260528_015609"
+  },
+  "summary": {
+    "summary": "A 12-year-old girl fell on a ball and is unconscious, the caller is at 8-826 East Florida Avenue in Denver, Colorado. The girl is not breathing and has been taken out of a pool. The caller is being instructed on how to perform CPR. The situation is critical and requires immediate medical attention. The caller is unsure if they can perform CPR and is asking for help. The emergency operator is trying to assist the caller and dispatch help.",
+    "incident_type": "Medical Emergency",
+    "location": "8-826 East Florida Avenue, Denver, Colorado",
+    "casualties": "1, not breathing",
+    "caller_count": "1",
+    "key_details": [
+      "12-year-old girl",
+      "unconscious",
+      "not breathing",
+      "fell on a ball",
+      "taken out of a pool"
+    ],
+    "priority": "HIGH",
+    "recommended_response": "Ambulance, Paramedics, possibly a Fire Department unit"
+  },
+  "diarized_transcript": [
+    {
+      "start": 0.5800000000000014,
+      "end": 2.3,
+      "speaker": "SPEAKER_00",
+      "text": "I wrote 911, where's your emergency?"
+    },
+    {
+      "start": 2.98,
+      "end": 9.24,
+      "speaker": "SPEAKER_01",
+      "text": "Yeah, this is from I had a little girl that fell on the ball and I think she's unconscious"
+    },
+    {
+      "start": 9.24,
+      "end": 9.76,
+      "speaker": "SPEAKER_01",
+      "text": "right now."
+    },
+    {
+      "start": 10.0,
+      "end": 10.46,
+      "speaker": "SPEAKER_01",
+      "text": "Okay, what address?"
+    },
+    {
+      "start": 11.44,
+      "end": 14.52,
+      "speaker": "SPEAKER_01",
+      "text": "It's 8-826 East Florida Avenue."
+    },
+    {
+      "start": 15.0,
+      "end": 16.3,
+      "speaker": "SPEAKER_00",
+      "text": "Okay, what city are you in?"
+    },
+    {
+      "start": 16.64,
+      "end": 17.44,
+      "speaker": "SPEAKER_00",
+      "text": "Denver, Colorado."
+    },
+    {
+      "start": 17.92,
+      "end": 19.16,
+      "speaker": "SPEAKER_00",
+      "text": "Okay, let me get you in touch with Denver."
+    },
+    {
+      "start": 19.3,
+      "end": 19.92,
+      "speaker": "SPEAKER_00",
+      "text": "Do not hang up."
+    },
+    {
+      "start": 20.06,
+      "end": 20.94,
+      "speaker": "SPEAKER_00",
+      "text": "Okay, hold on one moment."
+    },
+    {
+      "start": 21.0,
+      "end": 22.16,
+      "speaker": "SPEAKER_01",
+      "text": "No, no, no, I was 7-4."
+    },
+    {
+      "start": 22.18,
+      "end": 22.66,
+      "speaker": "SPEAKER_00",
+      "text": "Okay, hold on."
+    },
+    {
+      "start": 31.839999999999996,
+      "end": 32.28,
+      "speaker": "SPEAKER_01",
+      "text": "Okay."
+    },
+    {
+      "start": 32.28,
+      "end": 33.48,
+      "speaker": "SPEAKER_01",
+      "text": "I call 911, okay?"
+    },
+    {
+      "start": 35.42,
+      "end": 37.1,
+      "speaker": "SPEAKER_01",
+      "text": "I call 911, okay?"
+    },
+    {
+      "start": 37.22,
+      "end": 37.72,
+      "speaker": "SPEAKER_01",
+      "text": "Denver, 90."
+    },
+    {
+      "start": 37.94,
+      "end": 39.18,
+      "speaker": "SPEAKER_01",
+      "text": "What, 8-7, 4-10, man."
+    },
+    {
+      "start": 39.28,
+      "end": 40.82,
+      "speaker": "SPEAKER_00",
+      "text": "This is Eva with Aurora."
+    },
+    {
+      "start": 41.14,
+      "end": 43.78,
+      "speaker": "SPEAKER_00",
+      "text": "I've got a lady on the phone and my possibly having unconscious child."
+    },
+    {
+      "start": 44.5,
+      "end": 46.66,
+      "speaker": "SPEAKER_00",
+      "text": "8-826 East Florida Avenue."
+    },
+    {
+      "start": 46.66,
+      "end": 47.68,
+      "speaker": "SPEAKER_00",
+      "text": "Is that going to be your..."
+    },
+    {
+      "start": 47.68,
+      "end": 47.92,
+      "speaker": "SPEAKER_01",
+      "text": "No, no."
+    },
+    {
+      "start": 48.54,
+      "end": 49.34,
+      "speaker": "SPEAKER_01",
+      "text": "East Florida."
+    },
+    {
+      "start": 49.71999999999999,
+      "end": 50.52,
+      "speaker": "SPEAKER_01",
+      "text": "What do we do?"
+    },
+    {
+      "start": 50.72,
+      "end": 51.7,
+      "speaker": "SPEAKER_01",
+      "text": "Is there anything we can do?"
+    },
+    {
+      "start": 52.08,
+      "end": 52.74,
+      "speaker": "SPEAKER_01",
+      "text": "That would help us?"
+    },
+    {
+      "start": 53.18,
+      "end": 54.46,
+      "speaker": "SPEAKER_01",
+      "text": "Is the child breathing?"
+    },
+    {
+      "start": 55.25999999999999,
+      "end": 57.6,
+      "speaker": "SPEAKER_01",
+      "text": "Yeah, she's 12 years, she's not breathing."
+    },
+    {
+      "start": 57.96,
+      "end": 58.68,
+      "speaker": "SPEAKER_01",
+      "text": "She's not doing anything."
+    },
+    {
+      "start": 58.72,
+      "end": 59.6,
+      "speaker": "SPEAKER_01",
+      "text": "She is not breathing."
+    },
+    {
+      "start": 60.36,
+      "end": 61.56,
+      "speaker": "SPEAKER_01",
+      "text": "She's not doing anything."
+    }
+
+  ]
+}

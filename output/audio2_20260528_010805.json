@@ -1,0 +1,277 @@
+{
+  "metadata": {
+    "audio_file": "D:\\InternshipProject\\ERSS Project\\audio\\audio2.mp3",
+    "processed_at": "20260528_010805"
+  },
+  "summary": {
+    "summary": "A house fire is reported at Route 7 in Abington, with people, including kids, trapped inside. The caller sees flames and smoke, and initially heard the kids yelling, but they have since stopped. The exact address is not provided, but the caller is nearby. The situation is dire, and emergency services are needed immediately. The caller is urging for help, and the kids' condition is unknown. The fire is visible, with flames and smoke, and the caller is worried about the people inside.",
+    "incident_type": "House Fire",
+    "location": "Route 7, Abington",
+    "casualties": "unknown, multiple people including kids trapped inside",
+    "caller_count": 3,
+    "key_details": [
+      "House on fire",
+      "People, including kids, trapped inside",
+      "Flames and smoke visible"
+    ],
+    "priority": "HIGH",
+    "recommended_response": "Fire department, ambulance, and police units"
+  },
+  "diarized_transcript": [
+    {
+      "start": 0.0,
+      "end": 2.52,
+      "speaker": "SPEAKER_03",
+      "text": "Cover down in 9-1-1, medication of your emergency."
+    },
+    {
+      "start": 3.14,
+      "end": 6.48,
+      "speaker": "SPEAKER_00",
+      "text": "Here we got a fire down here at Route 7."
+    },
+    {
+      "start": 7.16,
+      "end": 8.1,
+      "speaker": "SPEAKER_00",
+      "text": "Right here at Abington."
+    },
+    {
+      "start": 9.46,
+      "end": 11.06,
+      "speaker": "SPEAKER_02",
+      "text": "Route 7 and Abington heard."
+    },
+    {
+      "start": 11.52,
+      "end": 12.76,
+      "speaker": "SPEAKER_00",
+      "text": "Yeah, right down below in the comments."
+    },
+    {
+      "start": 13.22,
+      "end": 13.68,
+      "speaker": "SPEAKER_00",
+      "text": "See you in a hole."
+    },
+    {
+      "start": 20.82,
+      "end": 22.06,
+      "speaker": "SPEAKER_01",
+      "text": "And what's on fire?"
+    },
+    {
+      "start": 23.32,
+      "end": 25.1,
+      "speaker": "SPEAKER_00",
+      "text": "There kids in the house in here, Howard."
+    },
+    {
+      "start": 25.54,
+      "end": 26.96,
+      "speaker": "SPEAKER_01",
+      "text": "The house is on fire."
+    },
+    {
+      "start": 27.28,
+      "end": 28.92,
+      "speaker": "SPEAKER_00",
+      "text": "The house is on fire. People's in there, there."
+    },
+    {
+      "start": 29.7,
+      "end": 32.2,
+      "speaker": "SPEAKER_03",
+      "text": "Okay. Do you see flames in the smoke?"
+    },
+    {
+      "start": 32.6,
+      "end": 34.94,
+      "speaker": "SPEAKER_00",
+      "text": "Yes, I see smoke. Yes, it was hard on it."
+    },
+    {
+      "start": 35.12,
+      "end": 35.32,
+      "speaker": "SPEAKER_00",
+      "text": "Okay."
+    },
+    {
+      "start": 35.36,
+      "end": 36.06,
+      "speaker": "SPEAKER_00",
+      "text": "Come on, please, Howard."
+    },
+    {
+      "start": 36.12,
+      "end": 40.34,
+      "speaker": "SPEAKER_02",
+      "text": "All right. Do you have a direct address?"
+    },
+    {
+      "start": 40.52,
+      "end": 40.66,
+      "speaker": "SPEAKER_02",
+      "text": "Oh!"
+    },
+    {
+      "start": 42.74,
+      "end": 43.2,
+      "speaker": "SPEAKER_00",
+      "text": "Me, here."
+    },
+    {
+      "start": 43.44,
+      "end": 44.82,
+      "speaker": "SPEAKER_02",
+      "text": "Yes, do you have a direct address?"
+    },
+    {
+      "start": 46.06,
+      "end": 48.76,
+      "speaker": "SPEAKER_00",
+      "text": "I don't know that, guys. Is that down below? But, come, it's just home."
+    },
+    {
+      "start": 49.8,
+      "end": 50.56,
+      "speaker": "SPEAKER_03",
+      "text": "See you all now."
+    },
+    {
+      "start": 51.0,
+      "end": 52.34,
+      "speaker": "SPEAKER_00",
+      "text": "The kids ain't yelling anymore."
+    },
+    {
+      "start": 53.92,
+      "end": 55.32,
+      "speaker": "SPEAKER_03",
+      "text": "And you said flames are visible?"
+    },
+    {
+      "start": 55.58,
+      "end": 56.94,
+      "speaker": "SPEAKER_00",
+      "text": "Yes, flames are, yes, hard."
+    }
+  ],
+  "whisper_segments": [
+    {
+      "start": 0.0,
+      "end": 2.52,
+      "text": "Cover down in 9-1-1, medication of your emergency."
+    },
+    {
+      "start": 3.14,
+      "end": 6.48,
+      "text": "Here we got a fire down here at Route 7."
+    },
+    {
+      "start": 7.16,
+      "end": 8.1,
+      "text": "Right here at Abington."
+    },
+    {
+      "start": 9.46,
+      "end": 11.06,
+      "text": "Route 7 and Abington heard."
+    },
+    {
+      "start": 11.52,
+      "end": 12.76,
+      "text": "Yeah, right down below in the comments."
+    },
+    {
+      "start": 13.22,
+      "end": 13.68,
+      "text": "See you in a hole."
+    },
+    {
+      "start": 20.82,
+      "end": 22.06,
+      "text": "And what's on fire?"
+    },
+    {
+      "start": 23.32,
+      "end": 25.1,
+      "text": "There kids in the house in here, Howard."
+    },
+    {
+      "start": 25.54,
+      "end": 26.96,
+      "text": "The house is on fire."
+    },
+    {
+      "start": 27.28,
+      "end": 28.92,
+      "text": "The house is on fire. People's in there, there."
+    },
+    {
+      "start": 29.7,
+      "end": 32.2,
+      "text": "Okay. Do you see flames in the smoke?"
+    },
+    {
+      "start": 32.6,
+      "end": 34.94,
+      "text": "Yes, I see smoke. Yes, it was hard on it."
+    },
+    {
+      "start": 35.12,
+      "end": 35.32,
+      "text": "Okay."
+    },
+    {
+      "start": 35.36,
+      "end": 36.06,
+      "text": "Come on, please, Howard."
+    },
+    {
+      "start": 36.12,
+      "end": 40.34,
+      "text": "All right. Do you have a direct address?"
+    },
+    {
+      "start": 40.52,
+      "end": 40.66,
+      "text": "Oh!"
+    },
+    {
+      "start": 42.74,
+      "end": 43.2,
+      "text": "Me, here."
+    },
+    {
+      "start": 43.44,
+      "end": 44.82,
+      "text": "Yes, do you have a direct address?"
+    },
+    {
+      "start": 46.06,
+      "end": 48.76,
+      "text": "I don't know that, guys. Is that down below? But, come, it's just home."
+    },
+    {
+      "start": 49.8,
+      "end": 50.56,
+      "text": "See you all now."
+    },
+    {
+      "start": 51.0,
+      "end": 52.34,
+      "text": "The kids ain't yelling anymore."
+    },
+    {
+      "start": 53.92,
+      "end": 55.32,
+      "text": "And you said flames are visible?"
+    },
+    {
+      "start": 55.58,
+      "end": 56.94,
+      "text": "Yes, flames are, yes, hard."
+    }
+  ]
+}
