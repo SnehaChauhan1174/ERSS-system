@@ -205,6 +205,7 @@ so from chatgpt idea,
                So the 500ms VAD merging didn't just help accuracy of words — it accidentally gave Whisper more context window to predict punctuation correctly too.
                This is a side effect you want to keep. It means your VAD params are doing triple duty:
                 | Effect of 500ms VAD | How
+               | --- | --- | 
                 | Fewer hallucinations  | Less silence for Whisper to confuse|
                 | Better word accuracy  |       More context per segment|
                | Better punctuation     |       Richer prior context for decoder|
