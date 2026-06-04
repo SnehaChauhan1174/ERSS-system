@@ -209,6 +209,10 @@ so from chatgpt idea,
                 | Fewer hallucinations  | Less silence for Whisper to confuse|
                 | Better word accuracy  |       More context per segment|
                | Better punctuation     |       Richer prior context for decoder|
+
+    ### 4th june
+    Till now i have tried for different hindi model approaches, used hindi fine tuned model ```collabara/faster-whisper-hindi-medium``` and saw result quite good but still not segmenting good way trabscription was good although.
+  now we are moving to live transcription 
                
   
   
