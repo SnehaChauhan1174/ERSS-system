@@ -213,7 +213,145 @@ so from chatgpt idea,
     ### 4th june
     Till now i have tried for different hindi model approaches, used hindi fine tuned model ```collabara/faster-whisper-hindi-medium``` and saw result quite good but still not segmenting good way trabscription was good although.
   now we are moving to live transcription 
-               
+
+
+
+
+
+## 7th june
+so we have used fatser whisper hindi model and we get quite an accurate output for the live trnascription happening in chunks batch not the live streaming 
+now suppose we are taking 15s chunks then what will happen whisper will listen first 15s and then start processing it will take some time lime 2 3 4s which get printed as latency in output so the total time takn for that part will be 15+2.5s=17.5s
+
+the next 15s of audio is already being recorded/buffered while you're processing the previous one
+hey yu said that 15 s audio is lready buffered
+
+In a real live system, here's how it actually works
+You'd have two threads running in parallel:
+Thread 1 (recording):     continuously writes mic audio to a buffer
+Thread 2 (processing):    reads chunks from that buffer and transcribes
+
+Timeline:
+t=0s    Recording starts
+t=15s   Processing thread picks up first 15s chunk → sends to Whisper
+t=15s   Recording thread is ALREADY capturing second 15s (t=15 to t=30)
+t=17.5s Whisper finishes → prints output for chunk 1
+t=28s   Processing thread picks up chunk 2 (t=13 to t=28, with overlap)
+t=30.5s Whisper finishes → prints output for chunk 2
+While Whisper takes 2.5s to process chunk 1, the mic is independently capturing chunk 2. They don't block each other because they're separate threads.
+
+now in our code its not a live streaming its alreayd fully loaded audio
+
+The audio is fully loaded upfront
+pythonaudio, sr = librosa.load("emergency_call.wav")
+This one line loads the entire audio file into a numpy array in memory. All 53 seconds, right there. Nothing is being recorded. Nothing is streaming. It's just a big array of numbers.
+
+The chunking loop
+pythonstart_sample = 0
+
+while start_sample < len(audio):
+    end_sample = min(start_sample + chunk_samples, len(audio))
+    chunk      = audio[start_sample:end_sample]
+    chunk_start = start_sample / sr   # e.g. 0.0, 13.0, 26.0
+This is just slicing the array. chunk_samples = 15 * sr, so you're cutting out 15-second windows. Nothing live about this yet.
+
+This is the line that creates the illusion
+pythonelapsed = time.time() - call_start
+wait    = chunk_start - elapsed
+if wait > 0:
+    time.sleep(wait)
+Walk through it concretely:
+Chunk 2 starts at 13.0s in the audio.
+You start processing it at t=2.5s real time (just finished chunk 1).
+elapsed = 2.5s
+wait    = 13.0 - 2.5 = 10.5s
+→ code sleeps for 10.5 seconds
+So the code literally pauses and does nothing for 10.5 seconds — simulating that you're "waiting for the audio to arrive." Then it wakes up and processes chunk 2 instantly (since the array is already in memory).
+That sleep is the entire trick. It's not live. It's a timed replay.
+
+Why it prints output at realistic intervals
+Because of that sleep, chunk 1 output appears at ~17.5s, chunk 2 at ~30.5s, chunk 3 at ~43.5s — which feels like a real call being transcribed in real time. But underneath, you're just sleeping and then slicing a numpy array.
+
+What real live would look like
+pythonimport sounddevice as sd
+from queue import Queue
+
+audio_queue = Queue()
+
+def recording_callback(indata, frames, time, status):
+    audio_queue.put(indata.copy())   # mic pushes audio in real time
+
+# start recording in background
+sd.InputStream(callback=recording_callback, samplerate=16000).start()
+
+# processing loop reads from queue
+while True:
+    chunk = collect_from_queue(audio_queue, seconds=15)
+    segments = model.transcribe(chunk, ...)
+    print(segments)
+Here the mic is genuinely filling the queue while your loop is processing. No sleep, no simulation. That's the real version — and that's what you'd build for actual deployment.
+Your current code is a clean demo harness. It's the right way to test before you have real audio infrastructure.
+
+my understanding:
+ok so it is like as chunk 1 was alrady there so 15 sec were never passed and just 2s processin times takes place and thus it stopped 13s such that it feels like it listened whole 15 s first and then pcessed ti and then go to chunk2
+
+next doubt:
+now one thing see as in output yu can see it is breaking t good times
+like i want to ask like it takes 15s right and yah we are giving it intila prompt for context as it is a trnasformer
+but still like 15 s chunk can be anything so how it is knowing to break where and also like if a sentecne mid break in 15s and contuining in next how it is handling that
+
+1. How Whisper knows where to break segments
+Whisper is not breaking on 15s boundaries. It's breaking on speech patterns it learned during training.
+Whisper was trained on massive amounts of audio-transcript pairs. From that training it learned that segments end at:
+
+silence (even 300ms)
+natural sentence completion patterns
+breath pauses
+
+The thing doing this detection in your code is this:
+pythonvad_filter=True,
+vad_parameters=dict(
+    threshold=0.45,
+    min_silence_duration_ms=300,
+)
+VAD = Voice Activity Detection. Before Whisper even touches the audio, VAD scans the 15s chunk and marks regions as speech vs silence. Whisper then treats silence boundaries as segment boundaries.
+So the 15s chunk comes in → VAD finds 4 silence gaps → Whisper produces 4 segments. The 15s is just the container. Segmentation happens inside based on the audio content.
+
+2. Mid-sentence break across chunks — how it's handled
+This is where initial_prompt does the work.
+Say a sentence starts at 13.5s and ends at 15.8s. Your chunk ends at 15s, so Whisper only hears the first half. Two things happen:
+In chunk 1: Whisper hears an incomplete sentence. Because of how it was trained, it will either complete it naturally (it predicts likely endings) or cut it at the last clean word before the chunk ends.
+In chunk 2 (starts at 13s due to 2s overlap): This chunk actually contains 13s-28s, so it re-includes those last 2 seconds. That's the overlap doing its job — the sentence that was mid-cut is now fully present in chunk 2.
+Chunk 1:  |----0s-----------15s----|
+Chunk 2:          |----13s-----------28s----|
+                  ↑ overlap re-captures this
+And initial_prompt gives Whisper the last 200 chars of previous output as context:
+pythonprevious_text = " ".join([s["text"] for s in whis_seg])[-200:]
+So when chunk 2 starts, Whisper already knows what was said before — it's not starting blind. This is the transformer attention working on the prompt, biasing the decoder toward continuation rather than a fresh start.
+
+The dedup step then cleans the overlap
+Because chunk 2 re-transcribes 13-15s that chunk 1 already covered, you'd get duplicate segments. This removes them:
+pythonwhis_seg = [
+    s for s in whis_seg
+    if s["start"] >= last_chunk_end - 2.0
+]
+Only keep segments that start after where the last chunk ended (with 2s tolerance). So the repeated 13-15s gets dropped from chunk 2's output.
+
+So to summarize the full flow
+15s chunk arrives
+→ VAD finds silence gaps → marks segment boundaries
+→ initial_prompt gives conversation context
+→ Whisper decodes each segment using both audio + context
+→ 2s overlap ensures mid-sentence cuts are re-captured in next chunk
+→ dedup removes the re-captured overlap from output
+
+
+
+
+
+
+
+
+
   
   
     
