@@ -91,7 +91,7 @@ def prepare_audio(wav_path):
 #     return speaker_segments
 def diarize_audio(pipeline, audio_input):
 
-    diarization = pipeline(audio_input,num_speakers=2)
+    diarization = pipeline(audio_input)
 
     annotation = diarization.speaker_diarization
 
