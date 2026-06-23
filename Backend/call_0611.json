@@ -1,0 +1,306 @@
+{
+  "metadata": {
+    "audio_file": "real_audio1.wav",
+    "audio_duration": 222.03
+  },
+  "timings": {
+    "audio prepare (resample)": 0.772,
+    "whisper model load": 3.001,
+    "whisper transcription": 28.834,
+    "pyannote model load": 1.514,
+    "pyannote diarization": 8.634,
+    "merger + normalize": 0.005,
+    "groq summary": 1.39
+  },
+  "transcript": [
+    {
+      "start": 0.11,
+      "end": 5.5,
+      "speaker": "CALL_TAKER",
+      "text": "नमस्ते dial one one two जी sir बोलिए"
+    },
+    {
+      "start": 6.89,
+      "end": 14.39,
+      "speaker": "CALLER",
+      "text": "पर काफी time पहले मैंने call लगाया था अभी तक उसका कोई समाधान नहीं हुआ और पहले भी मैंने"
+    },
+    {
+      "start": 15.98,
+      "end": 18.18,
+      "speaker": "CALLER",
+      "text": "एक सौ बारह नहीं उन्नीस सौ तीस पे"
+    },
+    {
+      "start": 18.18,
+      "end": 20.32,
+      "speaker": "CALL_TAKER",
+      "text": "sir cyber की complain करी थी आपने"
+    },
+    {
+      "start": 20.32,
+      "end": 21.86,
+      "speaker": "CALLER",
+      "text": "हाँ करी थी ना"
+    },
+    {
+      "start": 21.86,
+      "end": 23.04,
+      "speaker": "CALL_TAKER",
+      "text": "किसी number से की थी"
+    },
+    {
+      "start": 23.04,
+      "end": 24.76,
+      "speaker": "CALLER",
+      "text": "उसी number से की थी sir"
+    },
+    {
+      "start": 24.76,
+      "end": 25.92,
+      "speaker": "CALL_TAKER",
+      "text": "sir क्या हुआ था"
+    },
+    {
+      "start": 27.32,
+      "end": 39.3,
+      "speaker": "CALLER",
+      "text": "काफी time पहले किसी का पैसा मेरे खाते में transfer हो गया था अब मैंने वो account से मैंने लौटा भी मतलब थाने से अः account बंद है मेरा account"
+    },
+    {
+      "start": 39.3,
+      "end": 44.12,
+      "speaker": "CALLER",
+      "text": "अः hold का चल रहा मतलब तेरह हजार रुपए डाल देते हैं तेरह हजार रुपए अब तक मैंने return कर दिया"
+    },
+    {
+      "start": 44.12,
+      "end": 46.68,
+      "speaker": "CALL_TAKER",
+      "text": "जी आपका bank account अभी भी hold है"
+    },
+    {
+      "start": 47.53,
+      "end": 57.91,
+      "speaker": "CALLER",
+      "text": "हाँ मेरा अः account तो मैंने number change करा है मेरा number है hold हो रहा है मतलब number भी बंद हो रहा है मेरा और मेरे को आठ महीने हो गया है"
+    },
+    {
+      "start": 57.91,
+      "end": 60.63,
+      "speaker": "CALL_TAKER",
+      "text": "कौन सी bank कौन सी bank का account है आपका"
+    },
+    {
+      "start": 60.63,
+      "end": 62.57,
+      "speaker": "CALLER",
+      "text": "central bank of india"
+    },
+    {
+      "start": 62.57,
+      "end": 64.95,
+      "speaker": "CALL_TAKER",
+      "text": "account number बताइए आपका"
+    },
+    {
+      "start": 65.24,
+      "end": 66.76,
+      "speaker": "CALLER",
+      "text": "account number बता रहा हूँ sir"
+    },
+    {
+      "start": 66.76,
+      "end": 70.14,
+      "speaker": "CALL_TAKER",
+      "text": "भोपाल से बात कर रहे हैं यहां पर बसुआ गार्डन थाना लगता है"
+    },
+    {
+      "start": 70.14,
+      "end": 70.86,
+      "speaker": "CALLER",
+      "text": "जी जी जी"
+    },
+    {
+      "start": 72.2,
+      "end": 73.78,
+      "speaker": "CALL_TAKER",
+      "text": "अमानत हुसैन जी"
+    },
+    {
+      "start": 73.78,
+      "end": 75.06,
+      "speaker": "CALLER",
+      "text": "जी जी जी sir"
+    },
+    {
+      "start": 75.57,
+      "end": 77.59,
+      "speaker": "CALL_TAKER",
+      "text": "number बताइए आपका account number"
+    },
+    {
+      "start": 77.59,
+      "end": 81.09,
+      "speaker": "CALLER",
+      "text": "ठीक है ठीक है sir"
+    },
+    {
+      "start": 82.62,
+      "end": 85.3,
+      "speaker": "CALL_TAKER",
+      "text": "sir साल भर से old हुआ है ना"
+    },
+    {
+      "start": 85.66,
+      "end": 92.62,
+      "speaker": "CALLER",
+      "text": "जी अक्षमा garden से हुआ है अब ये क्या है की काट नहीं गए ये लोग अब क्या चाह रहे है क्या नहीं चाह रहे है"
+    },
+    {
+      "start": 92.62,
+      "end": 93.76,
+      "speaker": "CALL_TAKER",
+      "text": "बोलिये sir account number"
+    },
+    {
+      "start": 98.16,
+      "end": 98.92,
+      "speaker": "CALLER",
+      "text": "जी sir"
+    },
+    {
+      "start": 126.01,
+      "end": 127.31,
+      "speaker": "CALL_TAKER",
+      "text": "बोलिये sir account number"
+    },
+    {
+      "start": 128.01,
+      "end": 130.49,
+      "speaker": "CALLER",
+      "text": "जी sir एक minute पर sorry sir"
+    },
+    {
+      "start": 139.97,
+      "end": 141.93,
+      "speaker": "CALLER",
+      "text": "देख के बता रहा हूँ की ऐसे आदमी है"
+    },
+    {
+      "start": 143.7,
+      "end": 178.34,
+      "speaker": "CALLER_01",
+      "text": "माफ़ी चाह रहा हूँ आपको कर रहा था बोलिए sir कितना time और लगेगा जी बस sir"
+    },
+    {
+      "start": 179.08,
+      "end": 179.88,
+      "speaker": "CALLER",
+      "text": "अः"
+    },
+    {
+      "start": 179.88,
+      "end": 193.3,
+      "speaker": "CALLER",
+      "text": "guide निकाल लेता मैंने नहीं मिलेगा कैसे मिलेगा"
+    },
+    {
+      "start": 197.66,
+      "end": 200.26,
+      "speaker": "CALLER",
+      "text": "एक और number लीजिये आप three nine"
+    },
+    {
+      "start": 200.26,
+      "end": 205.48,
+      "speaker": "CALL_TAKER",
+      "text": "three nine five two"
+    },
+    {
+      "start": 205.48,
+      "end": 206.97,
+      "speaker": "CALLER",
+      "text": "five four"
+    },
+    {
+      "start": 206.97,
+      "end": 207.67,
+      "speaker": "CALL_TAKER",
+      "text": "जी"
+    },
+    {
+      "start": 208.24,
+      "end": 209.58,
+      "speaker": "CALLER",
+      "text": "one three"
+    },
+    {
+      "start": 209.58,
+      "end": 210.3,
+      "speaker": "CALL_TAKER",
+      "text": "जी"
+    },
+    {
+      "start": 211.49,
+      "end": 212.77,
+      "speaker": "CALLER",
+      "text": "seven seven"
+    },
+    {
+      "start": 215.88,
+      "end": 222.0,
+      "speaker": "CALL_TAKER",
+      "text": "जानकारी ले ली गई जानकारी सर टाइगर में डाल दी गई जल्दी कारो आएगा इधर राज्य सुबह आराम कॉल करने के लिए धन्यवाद"
+    }
+  ],
+  "summary": "यहाँ दिया गया है JSON फॉर्मेट में आवश्यक जानकारी:\n\n```\n{\n  \"incident_type\": \"साइबर अपराध\",\n  \"incident_subtype\": \"बैंक खाते में अनधिकृत लेनदेन\",\n  \"caller_name\": \"अमानत हुसैन\",\n  \"caller_location\": \"भोपाल, बसुआ गार्डन\",\n  \"district\": \"भोपाल\",\n  \"state\": \"मध्य प्रदेश\",\n  \"bank_name\": \"सेंट्रल बैंक ऑफ इंडिया\",\n  \"account_number\": \"3952541377\",\n  \"phone_number\": \"Unknown\",\n  \"amount_involved\": \"13000\",\n  \"important_entities\": [\n    \"अमानत हुसैन\",\n    \"सेंट्रल बैंक ऑफ इंडिया\",\n    \"भोपाल पुलिस\"\n  ],\n  \"dispatcher_actions\": [\n    \"जानकारी लेना\",\n    \"जानकारी टाइगर में डालना\",\n    \"कार्रवाई करने का आश्वासन देना\"\n  ],\n  \"key_facts\": [\n    \"कॉलर के बैंक खाते में अनधिकृत लेनदेन हुआ है\",\n    \"कॉलर ने पहले भी शिकायत दर्ज कराई थी\",\n    \"कॉलर का बैंक खाता अभी भी होल्ड में है\",\n    \"कॉलर ने 13000 रुपये वापस कर दिए हैं\"\n  ],\n  \"final_summary\": \"कॉलर के बैंक खाते में अनधिकृत लेनदेन हुआ है और वह इसकी शिकायत दर्ज कराना चाहता है। कॉलर ने पहले भी शिकायत दर्ज कराई थी लेकिन अभी तक कोई कार्रवाई नहीं हुई है।\"\n}\n```",
+  "audit": {
+    "overall_score": 6,
+    "call_taker_role": "ERSS Call Taker",
+    "caller_role": "Complainant",
+    "incident_type": "Cyber Complaint",
+    "confirmed_location": "Bhोपाल, बसुआ गार्डन थाना",
+    "location_correction_occurred": false,
+    "dimensions": {
+      "protocol_adherence": {
+        "score": 7,
+        "reason": "The call taker followed the general protocol, but there were some deviations and lack of clarity in the conversation.",
+        "passed": true
+      },
+      "information_gathering": {
+        "score": 8,
+        "reason": "The call taker gathered most of the necessary information, including the account number and bank details.",
+        "passed": true
+      },
+      "caller_management": {
+        "score": 6,
+        "reason": "The call taker tried to manage the caller's expectations, but the conversation was sometimes unclear and the caller seemed frustrated.",
+        "passed": false
+      },
+      "communication": {
+        "score": 5,
+        "reason": "The communication was sometimes unclear, and the call taker did not always provide clear instructions or explanations.",
+        "passed": false
+      },
+      "location_confirmation": {
+        "score": 9,
+        "reason": "The call taker confirmed the location correctly, and there was no correction needed.",
+        "passed": true
+      }
+    },
+    "critical_failures": [
+      "Lack of clear communication and instructions"
+    ],
+    "strengths": [
+      "Information gathering"
+    ],
+    "improvement_areas": [
+      "Caller management",
+      "Communication clarity"
+    ],
+    "unresolved_info": [
+      "The exact outcome of the complaint and the expected resolution time"
+    ]
+  }
+}

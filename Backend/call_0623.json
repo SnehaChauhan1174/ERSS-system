@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "audio_file": "hindi_audio_wav.wav",
+    "audio_duration": 53.25
+  },
+  "timings": {
+    "mp3 to wav": 0.893,
+    "audio prepare (resample)": 0.029,
+    "whisper model load": 4.348,
+    "whisper transcription": 22.85,
+    "pyannote model load": 0.863,
+    "pyannote diarization": 2.032,
+    "merger + normalize": 0.0,
+    "role identification:": 5.863,
+    "groq summary": 1.541
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 3.0,
+      "speaker": "CALL_TAKER",
+      "text": "आपने nine one one से call किया है आपातकालीन क्या स्थिति है"
+    },
+    {
+      "start": 3.0,
+      "end": 16.92,
+      "speaker": "CALLER",
+      "text": "जी जी madam यहां पर एक accident हो गया है अः आगे road पर ही गाड़ी चल रही थी और एकदम से पीछे गाड़ी में थक्कर मार दिया उसको बहुत तेज accident हो गया और वो bike में तो आग लग गया है और गाड़ी में भी लोग traffic घायल है आप जल्दी गाड़ी भेज दीजिए एक"
+    },
+    {
+      "start": 16.92,
+      "end": 18.28,
+      "speaker": "CALLER",
+      "text": "ambulance भेज दीजिये एक"
+    },
+    {
+      "start": 19.11,
+      "end": 22.45,
+      "speaker": "CALL_TAKER",
+      "text": "अच्छा आप शांत रहिये पहले मुझे आप location बता दीजिये अपनी"
+    },
+    {
+      "start": 22.45,
+      "end": 36.31,
+      "speaker": "CALLER",
+      "text": "location madam जी है जलमहल road है जयपुर में ही जलमहल road है उसके आगे की तरफ थोड़ा हुआ है मंदिर के पास में वहीं पर accident हुआ है जलमहल जल्दी व्यवस्था करा दीजिए क्योंकि बहुत लोग घायल दिख रहे हैं हमें"
+    },
+    {
+      "start": 36.34,
+      "end": 42.4,
+      "speaker": "CALL_TAKER",
+      "text": "हां आप शांत रहिए मैं एक बार address repeat कर रही हूं जन जनगढ़ road मंदिर के पास जयपुर में"
+    },
+    {
+      "start": 42.4,
+      "end": 44.52,
+      "speaker": "CALLER",
+      "text": "जी madam जल महल road जल महल road"
+    },
+    {
+      "start": 44.52,
+      "end": 47.82,
+      "speaker": "CALL_TAKER",
+      "text": "जल महल ठीक है ठीक है जल महल road मंदिर के पास"
+    },
+    {
+      "start": 47.82,
+      "end": 48.68,
+      "speaker": "CALLER",
+      "text": "जी madam जी जी"
+    },
+    {
+      "start": 48.68,
+      "end": 53.22,
+      "speaker": "CALL_TAKER",
+      "text": "ठीक है ठीक है आप शांत रहिए अभी हम ambulance को जल्द से जल्द भेज रहे हैं"
+    }
+  ],
+  "summary": "यहाँ दिया गया JSON फॉर्मेट में डेटा है:\n\n```\n{\n  \"incident_type\": \"accident\",\n  \"incident_subtype\": \"road accident\",\n  \"severity\": \"high\",\n  \"caller_name\": \"Unknown\",\n  \"caller_location\": \"जलमहल road, जयपुर\",\n  \"district\": \"जयपुर\",\n  \"state\": \"राजस्थान\",\n  \"location\": \"जलमहल road, मंदिर के पास, जयपुर\",\n  \"vehicle_type\": [\"bike\", \"गाड़ी\"],\n  \"number_of_vehicles\": \"2\",\n  \"number_of_injured\": \"Unknown\",\n  \"ambulance_required\": \"yes\",\n  \"fire_incident\": \"yes\",\n  \"important_entities\": [\"जलमहल road\", \"मंदिर\", \"जयपुर\"],\n  \"dispatcher_actions\": [\"ambulance भेजना\", \"पुलिस को सूचित करना\", \"फायर ब्रिगेड को सूचित करना\"],\n  \"key_facts\": [\"road accident\", \"bike में आग लगना\", \"गाड़ी में लोग घायल होना\"],\n  \"final_summary\": \"जलमहल road, जयपुर में एक road accident हुआ है, जिसमें एक bike और एक गाड़ी शामिल हैं। bike में आग लग गई है और गाड़ी में लोग घायल हो गए हैं।\"\n}\n```\n\nयह JSON फॉर्मेट में डेटा है, जिसमें incident के प्रकार, स्थान, गंभीरता, कॉलर का नाम, स्थान, जिला, राज्य, वाहन के प्रकार, घायलों की संख्या, एम्बुलेंस की आवश्यकता, आग की घटना, महत्वपूर्ण संस्थाएं, डिस्पैचर की क्रियाएं, महत्वपूर्ण तथ्य और अंतिम सारांश शामिल हैं।"
+}

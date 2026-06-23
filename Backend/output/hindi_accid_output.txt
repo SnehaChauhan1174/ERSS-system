@@ -1,0 +1,20 @@
+Adaptive Score: 9/10
+FINAL AUDIT COMPLETED FOR CALL: Unknown
+Calculated Severity  : ACTIVE_CRISIS
+Assigned Final Score : 9.0 / 10
+
+ Dimension Breakdowns:
+   - Vocal Calmness: 9/10
+   - Reassurance: 8/10
+   - Conversational Control: 9/10
+   - Productive Urgency: 10/10
+   - Emotional Stability: 9/10
+
+ Audit Justification:
+The operator demonstrated excellent control and productive urgency throughout the high-severity call.
+They immediately focused on gathering critical information (location) while firmly,
+ yet calmly, asking the distressed caller to 'शांत रहिये' (stay calm) multiple times.
+This effectively anchored the caller and maintained conversational control without any signs of aggression, indifference, or panic.
+ The operator skipped unnecessary greetings and focused directly on the emergency, which is acceptable under the adaptive rule.
+ There was a minor verbal stumble when repeating the address, but it did not indicate panic or affect the overall professional delivery.
+ The operator's tone remained steady and supportive, ensuring the caller felt heard and that help was on the way.
