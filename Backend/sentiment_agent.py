@@ -1,10 +1,9 @@
 import os
 import json
 import time
-
 from pathlib import Path
 from google.genai.errors import ServerError, APIError
-from pydantic import BaseModel
+from pydantic import BaseModel,Field
 from typing import Optional, Dict, List, Any
 from groq import Groq
 from dotenv import load_dotenv
@@ -12,27 +11,25 @@ from typing import TypedDict, Literal
 from google import genai
 from google.genai import types
 from langgraph.graph import StateGraph, END
+import re
 
 load_dotenv()
 
 root_dir = Path(__file__).resolve().parent.parent
 env_path = root_dir / '.env'
 
-# Explicitly load it into system environment variables
-load_dotenv(dotenv_path=env_path)
-gemini_client = genai.Client()
+vocal_key = os.getenv("GEMINI_KEY_VOCAL")
+gemini_client = genai.Client(api_key=vocal_key)
 
-groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-# print("loaded groq key")
 
 class VocalState(TypedDict):
     audio_path:str
     transcript:List[Dict[str,Any]]
-    summary:str
     severity:str
     score:float
     justification:str
     adaptive_dimensions:dict
+    soft_skills:dict
 
 def get_severity(state:VocalState)->dict:
     system_prompt = """
@@ -65,21 +62,33 @@ def get_severity(state:VocalState)->dict:
                 "severity":"ACTIVE_CRISIS or NON_ACTIVE_INCIDENT",
                 "call_type":"short description",
                 "reasoning":"one sentence"
-            }
-    
+        }
     """
-
-    response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user",   "content": f"Call transcript:\n{state['summary']}"}
-        ],
-        response_format={"type": "json_object"},
-        temperature=0.0
+    formatted_transcript = format_transcript_segments(state["transcript"])
+  
+    response = gemini_client.models.generate_content(
+        model="gemini-3.5-flash",
+        contents=f"Call transcript:\n{formatted_transcript}",
+        config=types.GenerateContentConfig(
+            system_instruction=system_prompt,
+            response_mime_type="application/json",
+            temperature=0.0
+        )
     )
 
-    result = json.loads(response.choices[0].message.content)
+    raw = response.text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("\n", 1)[1]
+    if raw.endswith("```"):
+        raw = raw.rsplit("```", 1)[0]
+    raw = raw.strip()
+
+    try:
+        result = json.loads(raw)
+    except Exception:
+     
+        result = {"severity": "NON_ACTIVE_INCIDENT", "call_type": "unknown"}
+
     severity = result.get("severity", "ROUTINE")
     print(f"   --> Triage Verdict: {severity} | Type: {result.get('call_type')}")
 
@@ -124,6 +133,18 @@ def cleanup_audio(uploaded_file):
     gemini_client.files.delete(name=uploaded_file.name)
     print("temp cloud cleaned up")
 
+
+class SoftSkills(BaseModel):
+    tone: str
+    argument: str
+    enthusiasm_willingness: str
+
+
+class VocalAuditSchema(BaseModel):
+    score: float = Field(..., description="Score between 0 and 10")
+    soft_skills: SoftSkills
+    justification: str
+
 def call_gemini_multimodal(uploaded_file,system_prompt:str,transcript:str)->dict:
     """
         executes audio processing so the model can listen to pitch, freq and vloume
@@ -135,7 +156,7 @@ def call_gemini_multimodal(uploaded_file,system_prompt:str,transcript:str)->dict
     for attempt in range(retries):
         try:
             resp = gemini_client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-3.5-flash",
                 contents=[
                     types.Content(
                         role="user",
@@ -152,17 +173,13 @@ def call_gemini_multimodal(uploaded_file,system_prompt:str,transcript:str)->dict
                 ],
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
+                    response_schema=VocalAuditSchema,
                     temperature=0.0
                 )
             )
 
-            # If successful, parse and break out of the loop
-            raw = resp.text.strip()
-            if raw.startswith("```"):
-                raw = raw.split("\n", 1)[1]
-            if raw.endswith("```"):
-                raw = raw.rsplit("```", 1)[0]
-            return json.loads(raw.strip())
+            return json.loads(resp.text)
+    
 
         except (ServerError, APIError) as e:
             if "503" in str(e) and attempt < retries - 1:
@@ -170,7 +187,7 @@ def call_gemini_multimodal(uploaded_file,system_prompt:str,transcript:str)->dict
                 time.sleep(delay)
                 delay *= 2 # Double the wait time for the next attempt
             else:
-                raise e # Reraise the crash if out of retries or a different error occurs
+                raise e 
 
 def adaptive_compliance_node(state:VocalState)->dict:
     # this checker evaluated the actual vocal behavior, empathy, and tone of how the agent handled the crisis
@@ -216,9 +233,11 @@ def adaptive_compliance_node(state:VocalState)->dict:
         '   "productive_urgency": <0-10>,\n'
         '   "emotional_stability": <0-10>\n'
         ' },\n' 
-        ' "productive_urgency_detected": true,\n'
-        ' "critical_deficit_detected": false,\n'
-        ' "deficit_type": "NONE",\n'
+        ' "soft_skills":{' 
+        '   "tone": "Good or Ok or Poor — Good means empathetic and calming, Ok means neutral/professional, Poor means cold/rude/dismissive",\n'
+        '   "argument": "Good or Ok or Poor — Good means zero aggression and stayed composed under pressure, Ok means minor friction, Poor means matched caller aggression or argued",\n'
+        '   "enthusiasm_willingness": "Good or Ok or Poor — Good means fully engaged and proactive, Ok means did the job without energy, Poor means showed signs of ignorance or indifference"\n'
+        '},\n'
         ' "justification": "detailed explanation"\n'
         "}"
         # "Return strict JSON:\n"
@@ -233,6 +252,15 @@ def adaptive_compliance_node(state:VocalState)->dict:
     uploaded=upload_audio(state["audio_path"])
     try:
         result=call_gemini_multimodal(uploaded,system_prompt,trans_text)
+    except Exception as e:
+        print(f"Error in compliance node: {e}")
+        # Provide a safe fallback dictionary if the call fails
+        result = {
+            "score": 5.0,
+            "dimensions": {},
+            "soft_skills": {"tone": "Ok", "argument": "Ok", "enthusiasm_willingness": "Ok"},
+            "justification": "Failed to generate audit."
+        }
     finally:
         cleanup_audio(uploaded)
 
@@ -241,7 +269,12 @@ def adaptive_compliance_node(state:VocalState)->dict:
     return {
         "score": float(result.get("score", 5.0)),
         "justification": result.get("justification", ""),
-        "adaptive_dimensions":result.get("dimensions", {})
+        "adaptive_dimensions":result.get("dimensions", {}),
+        "soft_skills":         result.get("soft_skills", {
+            "tone":                   "Ok",
+            "argument":               "Ok",
+            "enthusiasm_willingness": "Ok"
+        })
     }
 
 
@@ -295,6 +328,11 @@ def rigid_compliance_node(state:VocalState)->dict:
         "    \"acknowledgment_tone\": <0-10>,\n"
         "    \"communication_clarity\": <0-10>\n"
         "  },\n"
+        "  \"soft_skills\": {\n"
+        "    \"tone\": \"Good or Ok or Poor — Good means warm and empathetic throughout, Ok means neutral/professional, Poor means cold/robotic/dismissive\",\n"
+        "    \"argument\": \"Good or Ok or Poor — Good means stayed fully composed and never challenged the caller, Ok means minor impatience, Poor means sounded frustrated or dismissive toward the caller's complaint\",\n"
+        "    \"enthusiasm_willingness\": \"Good or Ok or Poor — Good means genuinely engaged and helpful, Ok means adequate but flat, Poor means showed visible disinterest or ignored caller frustration\"\n"
+        "  },\n"
         "  \"justification\": \"detailed breakdown citing specific vocal moments heard in the audio\"\n"
         "}"
     )
@@ -302,6 +340,15 @@ def rigid_compliance_node(state:VocalState)->dict:
     uploaded = upload_audio(state["audio_path"])
     try:
         result = call_gemini_multimodal(uploaded, system_prompt, trans_text)
+    except Exception as e:
+        print(f"Error in compliance node: {e}")
+        # Provide a safe fallback dictionary if the call fails
+        result = {
+            "score": 5.0,
+            "dimensions": {},
+            "soft_skills": {"tone": "Ok", "argument": "Ok", "enthusiasm_willingness": "Ok"},
+            "justification": "Failed to generate audit."
+        }
     finally:
         cleanup_audio(uploaded)
 
@@ -309,7 +356,12 @@ def rigid_compliance_node(state:VocalState)->dict:
     return {
         "score":         float(result.get("score", 5.0)),
         "justification": result.get("justification", ""),
-        "adaptive_dimensions": result.get("dimensions", {})
+        "adaptive_dimensions": result.get("dimensions", {}),
+        "soft_skills":         result.get("soft_skills", {
+            "tone":                   "Ok",
+            "argument":               "Ok",
+            "enthusiasm_willingness": "Ok"
+        })
     }
 
 graph=StateGraph(VocalState)
@@ -317,8 +369,8 @@ graph=StateGraph(VocalState)
 graph.add_node("get_severity",get_severity)
 graph.add_node("adaptive_compliance",adaptive_compliance_node)
 graph.add_node("rigid_compliance",rigid_compliance_node)
-
 graph.set_entry_point("get_severity")
+
 graph.add_conditional_edges(
     "get_severity",
     severity_router,
@@ -332,15 +384,6 @@ graph.add_edge("rigid_compliance",END)
 
 vocal_graph=graph.compile()
 
-def execute_agent_audit(audio_path:str,transcript:List[Dict[str,Any]],summary:str)->dict:
-    return vocal_graph.invoke({
-        "audio_path":    audio_path,
-        "transcript":    transcript,
-        "summary":       summary,
-        "severity":      "",
-        "score":         0.0,
-        "justification": "",
-        "adaptive_dimensions": {}
-    })
+
 
 

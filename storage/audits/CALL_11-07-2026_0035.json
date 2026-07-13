@@ -1,0 +1,87 @@
+{
+    "call_id": "CALL_11-07-2026_0035",
+    "audit_time": "11-07-2026 12:54:27",
+    "audit_report": {
+        "meta": {
+            "total_weighted_score": 57.75,
+            "out_of": 100.0,
+            "performance_verdict": "MARGINAL - Requires Performance Improvement"
+        },
+        "script_compliance": {
+            "opening_statement_10pt": {
+                "weight": "10%",
+                "raw_score_out_of_10": 0.0,
+                "weighted_contribution": 0.0,
+                "finding": "failed: Extra data: line 6 column 1 (char 197)",
+                "greeting_detected": false
+            },
+            "closing_statement_10pt": {
+                "weight": "10%",
+                "raw_score_out_of_10": 10.0,
+                "weighted_contribution": 10.0,
+                "finding": "The call taker confirmed that the information was recorded in the system, action would be taken soon, and thanked the caller.",
+                "closing_detected": true
+            },
+            "information_gathering_30pt": {
+                "weight": "30%",
+                "raw_score_out_of_10": 5.5,
+                "call_type": "Cyber Crime",
+                "weighted_contribution": 16.5,
+                "finding": "Address not confirmed twice. The dispatcher suggested the location (Bhopal, Basua Garden) and the caller agreed, but the standard four-step confirmation protocol was not followed. Also missed 1 critical fields.",
+                "critical_gaps": [
+                    "previous_complaint_acknowledgement_number"
+                ],
+                "address_confirmed_twice": false,
+                "confirmed_location": null
+            },
+            "silence_analysis_25pt": {
+                "weight": "25%",
+                "raw_score_out_of_10": 7.5,
+                "weighted_contribution": 18.75,
+                "finding": "Line compliance friction detected. Found 1 unexplained dead-air gaps.",
+                "unjustified_gaps_found": 1,
+                "silence_logs": [
+                    {
+                        "timestamp": "98.9s - 126.0s",
+                        "duration_seconds": 27.09,
+                        "status": "UNJUSTIFIED_PENALTY",
+                        "audit_reasoning": "The silence is unjustified because the caller did not explicitly ask for time to search, and the dispatcher resumed after 27 seconds by repeating the exact same question showing no progress."
+                    }
+                ]
+            },
+            "caller_management_25pt": {
+                "weight": "25%",
+                "raw_score_out_of_10": 5.0,
+                "weighted_contribution": 12.5,
+                "finding": "Acceptable management performance but conversational control was unstrategic. The agent did not use any calming verbal anchors or reassuring phrases (such as 'घबराइए मत') despite the caller appearing flustered and apologetic ('माफ़ी चाह रहा हूँ'). The agent remained strictly transactional, repeatedly demanding the account number ('बोलिये sir account number'). No language adaptation was observed, as the agent maintained a standard Hindi-English mix without adjusting vocabulary to assist the struggling caller.",
+                "audit_detail": {
+                    "tactical_grounding_actions": 0,
+                    "penalized_interruptions": 0
+                }
+            }
+        },
+        "weighted_breakdown": {
+            "opening_statement": 0.0,
+            "closing_statement": 10.0,
+            "information_gathering": 16.5,
+            "silence_analysis": 18.75,
+            "caller_management": 12.5,
+            "total": 57.75
+        },
+        "soft_skills_analysis": {
+            "severity": "NON_ACTIVE_INCIDENT",
+            "vocal_score": 6.3,
+            "justification": "The dispatcher showed a reasonable amount of patience by waiting on the line for over two minutes while the caller searched for their account number. However, their tone remained flat and robotic throughout, offering no empathy or reassurance regarding the caller's ongoing issue. Furthermore, while the dispatcher's speech was clear during the main part of the call, the final closing statement was extremely rushed, mumbled, and delivered in a highly mechanical manner, significantly reducing the clarity of the resolution.",
+            "adaptive_dimensions": {
+                "patience_and_listening": 7.0,
+                "acknowledgment_tone": 6.0,
+                "communication_clarity": 6.0
+            },
+            "soft_skills": {
+                "tone": "Ok",
+                "argument": "Good",
+                "enthusiasm_willingness": "Ok"
+            }
+        }
+    }
+}

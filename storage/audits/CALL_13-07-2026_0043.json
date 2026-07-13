@@ -1,0 +1,85 @@
+{
+    "call_id": "CALL_13-07-2026_0043",
+    "call_taker_id": "CT-10",
+    "audit_time": "13-07-2026 12:01:39",
+    "audio_file": "hindi_audio.wav",
+    "audit_report": {
+        "meta": {
+            "total_weighted_score": 77.0,
+            "out_of": 100.0,
+            "performance_verdict": "SATISFACTORY"
+        },
+        "script_compliance": {
+            "opening_statement_10pt": {
+                "weight": "10%",
+                "raw_score_out_of_10": 7.0,
+                "weighted_contribution": 7.0,
+                "finding": "Greeting present but no explicit 112 identification",
+                "greeting_detected": true
+            },
+            "closing_statement_10pt": {
+                "weight": "10%",
+                "raw_score_out_of_10": 7.0,
+                "weighted_contribution": 7.0,
+                "finding": "Action (ambulance dispatch) confirmed but no proper sign‑off, making the closing abrupt",
+                "closing_detected": true
+            },
+            "information_gathering_30pt": {
+                "weight": "30%",
+                "raw_score_out_of_10": 6.0,
+                "call_type": "Road Traffic Accident",
+                "weighted_contribution": 18.0,
+                "finding": "Missed 2 critical field(s) during information gathering.",
+                "critical_gaps": [
+                    "caller_name",
+                    "number_of_injured"
+                ],
+                "address_confirmed_twice": true,
+                "confirmed_location": null
+            },
+            "silence_analysis_25pt": {
+                "weight": "25%",
+                "raw_score_out_of_10": 10.0,
+                "weighted_contribution": 25.0,
+                "finding": "Excellent line attentiveness. All silence pauses were contextually valid or operational.",
+                "unjustified_gaps_found": 0,
+                "silence_logs": []
+            },
+            "caller_management_25pt": {
+                "weight": "25%",
+                "raw_score_out_of_10": 8.0,
+                "weighted_contribution": 20.0,
+                "finding": "Highly effective caller management. Excellent command control and reassurances. Agent repeatedly used calming phrases such as 'आप शांत रहिये', reassured the caller while confirming the location in simple Hindi, repeated the address and avoided complex terms, thereby adapting language to the caller's needs.",
+                "audit_detail": {
+                    "tactical_grounding_actions": 0,
+                    "penalized_interruptions": 0
+                }
+            }
+        },
+        "weighted_breakdown": {
+            "opening_statement": 7.0,
+            "closing_statement": 7.0,
+            "information_gathering": 18.0,
+            "silence_analysis": 25.0,
+            "caller_management": 20.0,
+            "total": 77.0
+        },
+        "soft_skills_analysis": {
+            "severity": "ACTIVE_CRISIS",
+            "vocal_score": 9.0,
+            "justification": "The operator handled this high-severity emergency call with excellent composure and emotional stability. She repeatedly reassured the caller to remain calm, which helped anchor them during a panic-inducing situation. She prioritized gathering the location details efficiently. Although she initially misheard 'Jal Mahal' as 'Jangarh', she corrected it immediately upon the caller's clarification without any friction. She confirmed the dispatch of the ambulance promptly, demonstrating high productive urgency and professional empathy.",
+            "adaptive_dimensions": {
+                "vocal_calmness": 9,
+                "reassurance": 9,
+                "conversational_control": 9,
+                "productive_urgency": 9,
+                "emotional_stability": 10
+            },
+            "soft_skills": {
+                "tone": "Good",
+                "argument": "Good",
+                "enthusiasm_willingness": "Good"
+            }
+        }
+    }
+}

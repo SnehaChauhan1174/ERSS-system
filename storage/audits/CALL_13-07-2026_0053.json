@@ -1,0 +1,83 @@
+{
+    "call_id": "CALL_13-07-2026_0053",
+    "call_taker_id": "CT-04",
+    "audit_time": "13-07-2026 16:59:32",
+    "audio_file": "2026060912510091806426077547003201.wav",
+    "audit_report": {
+        "meta": {
+            "total_weighted_score": 81.25,
+            "out_of": 100.0,
+            "performance_verdict": "SATISFACTORY"
+        },
+        "script_compliance": {
+            "opening_statement_10pt": {
+                "weight": "10%",
+                "raw_score_out_of_10": 10.0,
+                "weighted_contribution": 10.0,
+                "finding": "Greeting and 112 identification present at start",
+                "greeting_detected": true
+            },
+            "closing_statement_10pt": {
+                "weight": "10%",
+                "raw_score_out_of_10": 10.0,
+                "weighted_contribution": 10.0,
+                "finding": "Call taker confirmed information was taken and entered, promised follow‑up and thanked the caller",
+                "closing_detected": true
+            },
+            "information_gathering_30pt": {
+                "weight": "30%",
+                "raw_score_out_of_10": 10.0,
+                "call_type": "Bank Account Hold",
+                "weighted_contribution": 30.0,
+                "finding": "Excellent. All critical emergency information successfully collected.",
+                "critical_gaps": [],
+                "address_confirmed_twice": true,
+                "confirmed_location": null
+            },
+            "silence_analysis_25pt": {
+                "weight": "25%",
+                "raw_score_out_of_10": 7.5,
+                "weighted_contribution": 18.75,
+                "finding": "Line compliance friction detected. Found 1 unexplained dead-air gaps.",
+                "unjustified_gaps_found": 1,
+                "silence_logs": [
+                    {
+                        "timestamp": "98.9s - 126.0s",
+                        "duration_seconds": 27.09,
+                        "status": "UNJUSTIFIED_PENALTY",
+                        "audit_reasoning": "Caller did not indicate they were retrieving the account number, and the dispatcher remained silent after the request, making the gap unjustified."
+                    }
+                ]
+            },
+            "caller_management_25pt": {
+                "weight": "25%",
+                "raw_score_out_of_10": 5.0,
+                "weighted_contribution": 12.5,
+                "finding": "Acceptable management performance but conversational control was unstrategic. The agent did not use calming anchors such as 'घबराइए मत' or 'मैं मदद भेज रहा हूँ'. The language remained formal Hindi throughout, with repeated prompts like 'बोलिये sir account number' and no simplification or dialect shift despite the caller's confusion.",
+                "audit_detail": {
+                    "tactical_grounding_actions": 0,
+                    "penalized_interruptions": 0
+                }
+            }
+        },
+        "weighted_breakdown": {
+            "opening_statement": 10.0,
+            "closing_statement": 10.0,
+            "information_gathering": 30.0,
+            "silence_analysis": 18.75,
+            "caller_management": 12.5,
+            "total": 81.25
+        },
+        "soft_skills_analysis": {
+            "severity": "NON_ACTIVE_INCIDENT",
+            "vocal_score": 6.3,
+            "justification": "The dispatcher maintained a professional but highly robotic and flat tone throughout the call. While they showed decent patience waiting over two minutes for the caller to retrieve their account number, they prompted the caller multiple times with a flat delivery ('बोलिये sir account number', 'कितना time और लगेगा'). Furthermore, the dispatcher completely ignored the caller's frustration regarding their account being held for eight months, offering no vocal empathy or reassurance. The closing statement was extremely rushed and mumbled, significantly reducing the clarity of the call's resolution.",
+            "adaptive_dimensions": {},
+            "soft_skills": {
+                "tone": "Ok",
+                "argument": "Ok",
+                "enthusiasm_willingness": "Ok"
+            }
+        }
+    }
+}

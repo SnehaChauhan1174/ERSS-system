@@ -1,0 +1,197 @@
+{
+    "call_id": "CALL_13-07-2026_0051",
+    "call_taker_id": "CT-03",
+    "audio_file": "2026060913064048906426158247003201.wav",
+    "audio_path": "storage\\audio\\2026060913064048906426158247003201.wav",
+    "created_at": "13-07-2026 15:29:47",
+    "transcript": [
+        {
+            "start": 2.22,
+            "end": 2.86,
+            "speaker": "CALL_TAKER",
+            "text": "हेलो"
+        },
+        {
+            "start": 2.86,
+            "end": 3.68,
+            "speaker": "CALL_TAKER",
+            "text": "हम्म"
+        },
+        {
+            "start": 4.42,
+            "end": 8.14,
+            "speaker": "CALLER",
+            "text": "एफ आर्मी ग्यारह से बोल रहे हैं सर गाड़ी ऑफ बोर्ड करानी है।"
+        },
+        {
+            "start": 8.14,
+            "end": 8.7,
+            "speaker": "CALL_TAKER",
+            "text": "किस लिए?"
+        },
+        {
+            "start": 9.72,
+            "end": 13.2,
+            "speaker": "CALLER",
+            "text": "सर मैं सर्विस के लिए जा रहा हूं गाड़ी।"
+        },
+        {
+            "start": 13.84,
+            "end": 15.64,
+            "speaker": "CALLER",
+            "text": "मुरैना ग्यारह लाइन प्रीमियर।"
+        },
+        {
+            "start": 15.74,
+            "end": 16.38,
+            "speaker": "CALLER",
+            "text": "जी सर"
+        },
+        {
+            "start": 37.15,
+            "end": 39.13,
+            "speaker": "CALLER",
+            "text": "डीएसए कब बात हुई आपकी?"
+        },
+        {
+            "start": 39.48,
+            "end": 42.84,
+            "speaker": "CALLER",
+            "text": "sir ये guest अभी दस minute पहले हुई थी"
+        },
+        {
+            "start": 50.42,
+            "end": 57.78,
+            "speaker": "CALL_TAKER",
+            "text": "क्या नाम है आपका?"
+        },
+        {
+            "start": 58.64,
+            "end": 61.16,
+            "speaker": "CALLER",
+            "text": "sir pilot बोल रहा हूं अमित श्रीवास्तव"
+        },
+        {
+            "start": 63.39,
+            "end": 64.75,
+            "speaker": "CALLER",
+            "text": "अमित श्रीवास्तव"
+        },
+        {
+            "start": 65.36,
+            "end": 66.72,
+            "speaker": "CALLER",
+            "text": "श्रीवास्तव"
+        },
+        {
+            "start": 67.58,
+            "end": 69.64,
+            "speaker": "CALLER",
+            "text": "श्रीवास्तव sir श्रीवास्तव"
+        },
+        {
+            "start": 69.64,
+            "end": 72.06,
+            "speaker": "CALLER",
+            "text": "जी श्रीवास्तव reading क्या है?"
+        },
+        {
+            "start": 73.24,
+            "end": 77.04,
+            "speaker": "CALLER",
+            "text": "अः reading है sir तैंतीस एक सौ तैंतीस"
+        },
+        {
+            "start": 77.04,
+            "end": 77.5,
+            "speaker": "CALLER",
+            "text": "कितना?"
+        },
+        {
+            "start": 78.46,
+            "end": 80.78,
+            "speaker": "CALLER",
+            "text": "double three one double three"
+        },
+        {
+            "start": 80.9,
+            "end": 82.98,
+            "speaker": "CALLER",
+            "text": "double three one double three"
+        },
+        {
+            "start": 84.37,
+            "end": 98.08,
+            "speaker": "CALLER",
+            "text": "कहाँ जाएगी गाड़ी सर इसके लिए जाएगी sir रॉयल ऑटो मोबाइल केदारपुर गिर्द चलिए जी जी ठीक है आपको"
+        },
+        {
+            "start": 109.47,
+            "end": 194.37,
+            "speaker": "CALLER",
+            "text": "तीसरी सर्विस है क्या sir तीसरी सर्विस है हाँ sir third service pilot line करेना है जी जी sir pilot"
+        },
+        {
+            "start": 195.42,
+            "end": 202.15,
+            "speaker": "CALLER",
+            "text": "जी sir ID मैं थोड़ी देर से दे दूंगा आपको है ना गाड़ी off road हो गयी ठीक है।"
+        },
+        {
+            "start": 202.82,
+            "end": 204.06,
+            "speaker": "CALLER",
+            "text": "गाड़ी हुई है off road"
+        },
+        {
+            "start": 204.54,
+            "end": 206.32,
+            "speaker": "CALLER",
+            "text": "हाँ गाड़ी off road हो गयी है।"
+        },
+        {
+            "start": 207.18,
+            "end": 221.56,
+            "speaker": "CALLER",
+            "text": "ठीक है थोड़ी देर से दे दूंगा मैं और गाड़ी जैसे व्हाट्सएप पे पहुँचेंगे ना GPS कैमरे से फोटो ग्रेस के भेज दीजियेगा ठीक है और जब निकलोगे तब डीवी ठीक है ठीक है पांच मिनट से दे दूंगा idea आपको"
+        },
+        {
+            "start": 222.35,
+            "end": 223.45,
+            "speaker": "CALLER",
+            "text": "okay ठीक है"
+        }
+    ],
+    "summary": {
+        "incident_type": "Vehicle Maintenance / Off-Road Request",
+        "incident_subtype": "Third Service",
+        "severity": "low",
+        "caller_name": "Amit Shrivastava",
+        "caller_role": "Pilot",
+        "caller_location": "Morena",
+        "district": "Morena",
+        "state": "Madhya Pradesh",
+        "vehicle_id": "FRV 11",
+        "odometer_reading": "33133",
+        "destination": "Royal Automobile, Kedarpur Gird",
+        "important_entities": [
+            "FRV 11",
+            "Amit Shrivastava (Pilot)",
+            "Royal Automobile, Kedarpur Gird",
+            "Morena"
+        ],
+        "dispatcher_actions": [
+            "Acknowledged the off-road status of the vehicle for service",
+            "Instructed the pilot to send GPS and camera photos via WhatsApp upon reaching the service center",
+            "Requested the pilot to provide his ID"
+        ],
+        "key_facts": [
+            "The caller is Pilot Amit Shrivastava from FRV 11, Morena",
+            "The vehicle is going off-road for its third service",
+            "The current odometer reading of the vehicle is 33133",
+            "The vehicle is being taken to Royal Automobile, Kedarpur Gird",
+            "The pilot promised to provide his ID within 5 minutes"
+        ],
+        "final_summary": "Pilot Amit Shrivastava of FRV 11 (Morena) requested to take the vehicle off-road for its third scheduled service at Royal Automobile, Kedarpur Gird. The current odometer reading is 33133. The call taker acknowledged the request, instructed the pilot to send GPS and camera photos via WhatsApp upon arrival, and requested the pilot's ID, which he agreed to provide shortly."
+    }
+}

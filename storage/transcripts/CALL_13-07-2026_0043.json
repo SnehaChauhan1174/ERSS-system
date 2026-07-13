@@ -1,0 +1,102 @@
+{
+    "call_id": "CALL_13-07-2026_0043",
+    "call_taker_id": "CT-10",
+    "audio_file": "hindi_audio.wav",
+    "audio_path": "storage\\audio\\hindi_audio.wav",
+    "created_at": "13-07-2026 12:00:23",
+    "transcript": [
+        {
+            "start": 0.0,
+            "end": 3.0,
+            "speaker": "CALL_TAKER",
+            "text": "आपने nine one call किया है आपातकालीन क्या स्थिति है"
+        },
+        {
+            "start": 3.0,
+            "end": 16.92,
+            "speaker": "CALLER",
+            "text": "जी जी madam यहां पर एक accident हो गया है अः आगे road पर ही गाड़ी चल रही थी और एकदम से पीछे गाड़ी में थक्कर मार दिया उसको बहुत तेज accident हो गया और वो bike में तो आग लग गया है और गाड़ी में भी लोग traffic घायल है आप जल्दी गाड़ी भेज दीजिए एक"
+        },
+        {
+            "start": 16.92,
+            "end": 18.26,
+            "speaker": "CALLER",
+            "text": "ambulance भेज दीजिये एक"
+        },
+        {
+            "start": 19.11,
+            "end": 22.45,
+            "speaker": "CALL_TAKER",
+            "text": "अच्छा आप शांत रहिये पहले मुझे आप location बता दीजिये अपनी"
+        },
+        {
+            "start": 22.45,
+            "end": 36.31,
+            "speaker": "CALLER",
+            "text": "location madam जी है जलमहल road है जयपुर में ही जलमहल road है उसके आगे की तरफ थोड़ा हुआ है मंदिर के पास में वहीं पर accident हुआ है जलमहल जल्दी व्यवस्था करा दीजिए क्योंकि बहुत लोग घायल दिख रहे हैं हमें"
+        },
+        {
+            "start": 36.34,
+            "end": 42.38,
+            "speaker": "CALL_TAKER",
+            "text": "हां आप शांत रहिए मैं एक बार address repeat कर रही हूं जन जनगढ़ road मंदिर के पास जयपुर में"
+        },
+        {
+            "start": 42.38,
+            "end": 44.52,
+            "speaker": "CALLER",
+            "text": "जी madam जल महल road जल महल road"
+        },
+        {
+            "start": 44.52,
+            "end": 47.82,
+            "speaker": "CALL_TAKER",
+            "text": "जल महल ठीक है ठीक है जल महल road मंदिर के पास"
+        },
+        {
+            "start": 47.82,
+            "end": 48.68,
+            "speaker": "CALLER",
+            "text": "जी madam जी जी"
+        },
+        {
+            "start": 48.68,
+            "end": 53.22,
+            "speaker": "CALL_TAKER",
+            "text": "ठीक है ठीक है आप शांत रहिए अभी हम ambulance को जल्द से जल्द भेज रहे हैं"
+        }
+    ],
+    "summary": {
+        "incident_type": "Road Traffic Accident",
+        "incident_subtype": "Vehicle collision with fire and injuries",
+        "severity": "high",
+        "caller_name": "Unknown",
+        "caller_location": "Jal Mahal Road, near temple, Jaipur",
+        "district": "Jaipur",
+        "state": "Rajasthan",
+        "vehicles_involved": [
+            "Car",
+            "Bike"
+        ],
+        "fire_reported": "Yes",
+        "injuries_reported": "Yes",
+        "important_entities": [
+            "Car",
+            "Bike",
+            "Temple",
+            "Jal Mahal Road"
+        ],
+        "dispatcher_actions": [
+            "Dispatch ambulance to Jal Mahal Road, Jaipur",
+            "Notify Fire Department about the burning motorcycle",
+            "Alert local police for traffic management and accident response"
+        ],
+        "key_facts": [
+            "A car hit a motorcycle from behind on Jal Mahal Road near a temple in Jaipur.",
+            "The motorcycle caught fire after the impact.",
+            "Multiple people are injured at the scene.",
+            "The caller requested an ambulance urgently."
+        ],
+        "final_summary": "A severe accident occurred on Jal Mahal Road near a temple in Jaipur, where a car hit a motorcycle from behind. The motorcycle caught fire, and multiple people are injured. The caller requested urgent ambulance assistance, which the call taker dispatched."
+    }
+}

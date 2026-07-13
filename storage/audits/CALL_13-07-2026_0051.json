@@ -1,0 +1,85 @@
+{
+    "call_id": "CALL_13-07-2026_0051",
+    "call_taker_id": "CT-03",
+    "audit_time": "13-07-2026 16:29:10",
+    "audio_file": "2026060913064048906426158247003201.wav",
+    "audit_report": {
+        "meta": {
+            "total_weighted_score": 62.25,
+            "out_of": 100.0,
+            "performance_verdict": "MARGINAL - Requires Performance Improvement"
+        },
+        "script_compliance": {
+            "opening_statement_10pt": {
+                "weight": "10%",
+                "raw_score_out_of_10": 7.0,
+                "weighted_contribution": 7.0,
+                "finding": "Greeting present but no 112 identification",
+                "greeting_detected": true
+            },
+            "closing_statement_10pt": {
+                "weight": "10%",
+                "raw_score_out_of_10": 0.0,
+                "weighted_contribution": 0.0,
+                "finding": "No closing statement from call taker confirming action",
+                "closing_detected": false
+            },
+            "information_gathering_30pt": {
+                "weight": "30%",
+                "raw_score_out_of_10": 8.0,
+                "call_type": "Vehicle Off-Road Service Request",
+                "weighted_contribution": 24.0,
+                "finding": "Missed 1 critical field(s) during information gathering.",
+                "critical_gaps": [
+                    "pilot_id"
+                ],
+                "address_confirmed_twice": true,
+                "confirmed_location": null
+            },
+            "silence_analysis_25pt": {
+                "weight": "25%",
+                "raw_score_out_of_10": 7.5,
+                "weighted_contribution": 18.75,
+                "finding": "Line compliance friction detected. Found 1 unexplained dead-air gaps.",
+                "unjustified_gaps_found": 1,
+                "silence_logs": [
+                    {
+                        "timestamp": "42.8s - 50.4s",
+                        "duration_seconds": 7.58,
+                        "status": "UNJUSTIFIED_PENALTY",
+                        "audit_reasoning": "Caller was not searching for information; dispatcher provided dead air with no contextual activity, making the silence unjustified."
+                    }
+                ]
+            },
+            "caller_management_25pt": {
+                "weight": "25%",
+                "raw_score_out_of_10": 5.0,
+                "weighted_contribution": 12.5,
+                "finding": "Acceptable management performance but conversational control was unstrategic. Call taker only said \"हेलो\" and \"हम्म\"; no steady calming anchors like \"घबराइए मत\" or \"मैं मदद भेज रहा हूँ\" were used, and there was no adjustment of vocabulary or shift to simpler/regional language despite the caller's fragmented speech.",
+                "audit_detail": {
+                    "tactical_grounding_actions": 0,
+                    "penalized_interruptions": 0
+                }
+            }
+        },
+        "weighted_breakdown": {
+            "opening_statement": 7.0,
+            "closing_statement": 0.0,
+            "information_gathering": 24.0,
+            "silence_analysis": 18.75,
+            "caller_management": 12.5,
+            "total": 62.25
+        },
+        "soft_skills_analysis": {
+            "severity": "NON_ACTIVE_INCIDENT",
+            "vocal_score": 7.5,
+            "justification": "The dispatcher handled the call with professional neutrality. He collected all required information, including the vehicle's current reading, destination, and service details, in a clear and structured manner. While his tone was calm and clear, it was somewhat mechanical and lacked warmth, which is acceptable for a routine administrative call but leaves room for a more polite and engaging delivery.",
+            "adaptive_dimensions": {},
+            "soft_skills": {
+                "tone": "Ok",
+                "argument": "Good",
+                "enthusiasm_willingness": "Ok"
+            }
+        }
+    }
+}
