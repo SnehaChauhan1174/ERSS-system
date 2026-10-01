@@ -65,34 +65,48 @@ def get_severity(state:VocalState)->dict:
         }
     """
     formatted_transcript = format_transcript_segments(state["transcript"])
-  
-    response = gemini_client.models.generate_content(
-        model="gemini-3.5-flash",
-        contents=f"Call transcript:\n{formatted_transcript}",
-        config=types.GenerateContentConfig(
-            system_instruction=system_prompt,
-            response_mime_type="application/json",
-            temperature=0.0
-        )
-    )
 
-    raw = response.text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("\n", 1)[1]
-    if raw.endswith("```"):
-        raw = raw.rsplit("```", 1)[0]
-    raw = raw.strip()
+    retries=4
+    delay=3
+    for attempt in range(retries):
+        try:
 
-    try:
-        result = json.loads(raw)
-    except Exception:
-     
-        result = {"severity": "NON_ACTIVE_INCIDENT", "call_type": "unknown"}
+            response = gemini_client.models.generate_content(
+                model="gemini-3.1-flash-lite",
+                contents=f"Call transcript:\n{formatted_transcript}",
+                config=types.GenerateContentConfig(
+                    system_instruction=system_prompt,
+                    response_mime_type="application/json",
+                    temperature=0.0
+                )
+            )
+            raw = response.text.strip()
+            if raw.startswith("```"):
+                raw = raw.split("\n", 1)[1]
+            if raw.endswith("```"):
+                raw = raw.rsplit("```", 1)[0]
+            raw = raw.strip()
 
-    severity = result.get("severity", "ROUTINE")
-    print(f"   --> Triage Verdict: {severity} | Type: {result.get('call_type')}")
+            try:
+                result = json.loads(raw)
+            except Exception:
+            
+                result = {"severity": "NON_ACTIVE_INCIDENT", "call_type": "unknown"}
 
-    return {"severity": severity}
+            severity = result.get("severity", "ROUTINE")
+            print(f"   --> Triage Verdict: {severity} | Type: {result.get('call_type')}")
+
+            return {"severity": severity}
+        
+        except (ServerError, APIError) as e:
+                if "503" in str(e) and attempt < retries - 1:
+                    print(f" High demand detected. Retrying in {delay}s... (Attempt {attempt + 1}/{retries})")
+                    time.sleep(delay)
+                    delay *= 2 # Double the wait time for the next attempt
+                else:
+                    raise e 
+
+    
 
 
 def format_transcript_segments(segments: List[Dict[str, Any]]) -> str:
@@ -156,7 +170,7 @@ def call_gemini_multimodal(uploaded_file,system_prompt:str,transcript:str)->dict
     for attempt in range(retries):
         try:
             resp = gemini_client.models.generate_content(
-                model="gemini-3.5-flash",
+                model="gemini-3.1-flash-lite",
                 contents=[
                     types.Content(
                         role="user",

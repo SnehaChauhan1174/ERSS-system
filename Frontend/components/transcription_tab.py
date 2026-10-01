@@ -52,10 +52,12 @@ def get_dots_html(rating_type):
     if rating_type == 'ok': return f"<span style='color:{COLORS['orange']}; letter-spacing:2px;'>●●●</span><span style='color:#e2e8f0'>●●</span>"
     return f"<span style='color:{COLORS['red']}; letter-spacing:2px;'>●●</span><span style='color:#e2e8f0'>●●●</span>"
 
-def render(data, t):
-    audit = data.get("audit_report", data.get("audit", {}))
-    summary = data.get("summary_data", data.get("summary", {}))
-    transcript = data.get("summary_data", {}).get("transcript", [])
+def render(audit_data,trans_data, t):
+
+    audit = audit_data
+    transcript=trans_data["transcript"]
+    summary=trans_data["summary"]
+    
     
     if not audit:
         st.info(t.get('lbl_audit_empty', 'Automated Audit is currently pending.'))
@@ -124,7 +126,7 @@ def render(data, t):
             st.markdown(
                 f"<div style='font-size: 0.75rem; font-weight: 700; letter-spacing: 0.5px; color: {COLORS['text_muted']}; margin-bottom: 20px;'>CALL DETAILS</div>"
                 "<div style='display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85rem;'>"
-                "<div><div style='color: #64748b; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 4px;'>Call ID</div><div style='font-weight: 600; color: #1e293b;'>" f"{audit.get('call_id', data.get('call_id', 'Unknown'))}" "</div></div>"
+                "<div><div style='color: #64748b; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 4px;'>Call ID</div><div style='font-weight: 600; color: #1e293b;'>" f"{audit.get('call_id', trans_data.get('call_id', 'Unknown'))}" "</div></div>"
                 "<div><div style='color: #64748b; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 4px;'>Call Taker</div><div style='font-weight: 600; color: #1e293b;'>CT-Unknown</div></div>"
                 "<div><div style='color: #64748b; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 4px;'>Duration</div><div style='font-weight: 600; color: #1e293b;'>" f"{duration_str}" "</div></div>"
                 "<div><div style='color: #64748b; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 4px;'>Incident</div><div style='font-weight: 600; color: #1e293b;'>" f"{summary.get('incident_type', 'Unknown')}" "</div></div>"

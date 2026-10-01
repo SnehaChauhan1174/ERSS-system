@@ -2,7 +2,7 @@ import streamlit as st
 from UI6translation import TEXT
 from api_client import process_audio_file
 from components.transcription_tab import render
-from Frontend.components.audit_tab import render_audit
+from components.audit_tab import render_audit
 
 
 def show():
@@ -28,7 +28,12 @@ def show():
             st.markdown("<div style='margin-top: 1.75rem;'></div>", unsafe_allow_html=True)
             analyze_btn = st.button(t.get('lbl_analyze_btn', "Analyze Call"), type="primary", use_container_width=True)
 
+    # show audio player as soon as file is uploaded — before any processing
+    if uploaded_file:
+        st.audio(uploaded_file, format="audio/wav")
+
     st.divider()
+   
 
     # --- 2. Processing & Results Section ---
     if analyze_btn:
@@ -59,12 +64,5 @@ def show():
         if data.get("call_id"):
             st.caption(f"Call ID: `{data['call_id']}`")
 
-        tab_titles = [t.get('tab_trans_sum', "Transcription & Summary"), t.get('tab_audit', "QA Audit")]
-        tab1, tab2 = st.tabs(tab_titles)
-        
-        
-        with tab1:
-            render_audit(data, t)
-            
-        with tab2:
-            render(data, t)
+        # only one tab — transcript and summary
+        render_audit(data,t)

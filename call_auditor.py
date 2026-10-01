@@ -371,20 +371,21 @@ class CallAuditor:
     def _extract_caller_management_metrics(self, transcript: list) -> dict:
         formatted = _format_transcript(transcript)
 
+        # ── part 1: soft skills via groq ─────────────────────────────────────
         soft_skills_prompt = f"""You are an expert ERSS (112) Behavior Analyst auditing a call taker's soft skills.
-Analyze the transcript and evaluate two specific dimensions:
-1. Active Reassurance: Did the agent use steady verbal calming anchors to calm panic (e.g., 'घबराइए मत', 'मैं मदद भेज रहा हूँ')?
-2. Language Adaptability: Did the agent adjust vocabulary or switch to simpler words/regional dialect if caller struggled?
+    Analyze the transcript and evaluate:
+    1. Active Reassurance: Did the agent use verbal calming anchors (e.g., 'घबराइए मत', 'मैं मदद भेज रहा हूँ')?
+    2. Language Adaptability: Did the agent adjust vocabulary if caller struggled?
 
-Return strict JSON with exactly these keys:
-{{
-  "active_reassurance_verified": true or false,
-  "language_adaptability_verified": true or false,
-  "behavioral_evidence_summary": "precise summary of linguistic phrases used"
-}}
+    Return strict JSON:
+    {{
+    "active_reassurance_verified": true or false,
+    "language_adaptability_verified": true or false,
+    "behavioral_evidence_summary": "precise summary"
+    }}
 
-Transcript:
-{formatted}"""
+    Transcript:
+    {formatted}"""
 
         try:
             groq_report = _groq_json(soft_skills_prompt)
@@ -395,9 +396,8 @@ Transcript:
                 "behavioral_evidence_summary":    "Inference failed."
             }
 
-        # overlap detection
-        total_agent_overlaps       = 0
-        overlapping_turns_to_check = []
+        # ── part 2: interruption detection from timestamps ────────────────────
+        overlapping_turns = []
 
         for i in range(len(transcript) - 1):
             curr_turn = transcript[i]
@@ -406,70 +406,135 @@ Transcript:
             if next_turn["start"] < curr_turn["end"]:
                 overlap_duration = curr_turn["end"] - next_turn["start"]
                 if next_turn["speaker"] == "CALL_TAKER" and overlap_duration > 0.4:
-                    total_agent_overlaps += 1
-                    overlapping_turns_to_check.append({
-                        "caller_panic_speech":       curr_turn["text"],
-                        "agent_interrupting_speech":  next_turn["text"]
+                    overlapping_turns.append({
+                        "timestamp":                f"{curr_turn['start']:.1f}s - {next_turn['start']:.1f}s",
+                        "overlap_duration_seconds": round(overlap_duration, 2),
+                        "caller_was_saying":        curr_turn["text"],
+                        "agent_interrupted_with":   next_turn["text"]
                     })
 
         command_control_count   = 0
         rude_interruption_count = 0
+        interruption_details    = []
 
-        if total_agent_overlaps > 0:
-            overlap_prompt = f"""You are an emergency room quality inspector reviewing speech overlaps where the dispatcher talked over the caller.
-Differentiate between two intents:
-- COMMAND_CONTROL: agent firmly cut off an escalating or hysterical caller to regain focus or give safety commands.
-- RUDE_INTERRUPTION: agent cut off a cooperative caller due to impatience.
+        if overlapping_turns:
+            overlap_prompt = f"""You are a 112 ERSS call quality inspector analyzing speech overlaps.
 
-Return JSON with a single key 'classifications' containing a list of strings,
-one per input, each either 'COMMAND_CONTROL' or 'RUDE_INTERRUPTION'.
+            A speech overlap occurs when the dispatcher starts speaking before the caller has finished.
+            Your job is to classify EACH overlap as either positive or negative:
 
-Overlap instances:
-{json.dumps(overlapping_turns_to_check, ensure_ascii=False)}"""
+            COMMAND_CONTROL (positive):
+            - Agent firmly redirected a panicking, hysterical, or off-topic caller
+            - Agent repeated location to confirm when caller was unclear
+            - Agent gave urgent safety instruction during a crisis
+
+            RUDE_INTERRUPTION (negative):
+            - Agent cut off a cooperative caller who was providing useful information
+            - Agent interrupted due to impatience or to rush the call
+            - Caller had not finished giving an important detail
+
+            For each overlap, return your classification and a one-line reason.
+
+            Return strict JSON:
+            {{
+            "classifications": [
+                {{
+                "type": "COMMAND_CONTROL or RUDE_INTERRUPTION",
+                "reason": "one line explanation"
+                }}
+            ]
+            }}
+
+            Overlaps to classify:
+            {json.dumps(overlapping_turns, ensure_ascii=False, indent=2)}"""
 
             try:
-                overlap_result = _groq_json(overlap_prompt)
-                classes = overlap_result.get("classifications", [])
-                command_control_count   = classes.count("COMMAND_CONTROL")
-                rude_interruption_count = classes.count("RUDE_INTERRUPTION")
+                overlap_result  = _groq_json(overlap_prompt)
+                classifications = overlap_result.get("classifications", [])
+
+                for i, item in enumerate(classifications):
+                    c_type  = item.get("type", "RUDE_INTERRUPTION")
+                    c_reason = item.get("reason", "")
+                    timestamp = overlapping_turns[i]["timestamp"] if i < len(overlapping_turns) else ""
+
+                    if c_type == "COMMAND_CONTROL":
+                        command_control_count += 1
+                    else:
+                        rude_interruption_count += 1
+
+                    interruption_details.append({
+                        "timestamp":      timestamp,
+                        "type":           c_type,
+                        "reason":         c_reason,
+                        "caller_saying":  overlapping_turns[i]["caller_was_saying"][:80],
+                        "agent_said":     overlapping_turns[i]["agent_interrupted_with"][:80]
+                    })
+
             except Exception:
-                rude_interruption_count = total_agent_overlaps
+                rude_interruption_count = len(overlapping_turns)
 
         return {
-            "active_reassurance":    groq_report.get("active_reassurance_verified", False),
-            "language_adaptability": groq_report.get("language_adaptability_verified", False),
-            "summary":               groq_report.get("behavioral_evidence_summary", ""),
-            "command_control_moves": command_control_count,
-            "rude_interruptions":    rude_interruption_count
+            "active_reassurance":      groq_report.get("active_reassurance_verified", False),
+            "language_adaptability":   groq_report.get("language_adaptability_verified", False),
+            "summary":                 groq_report.get("behavioral_evidence_summary", ""),
+            "command_control_moves":   command_control_count,
+            "rude_interruptions":      rude_interruption_count,
+            "total_interruptions":     len(overlapping_turns),
+            "interruption_details":    interruption_details
         }
+
 
     def caller_management(self, metrics: dict) -> dict:
         score = 5.0
 
+        # soft skills rewards
         if metrics["active_reassurance"]:
-            score += 2.0
+            score += 1.5
         if metrics["language_adaptability"]:
             score += 1.0
 
-        score += min(1.0, metrics["command_control_moves"] * 0.5)
-        score -= metrics["rude_interruptions"] * 2.0
+        # interruption analysis — primary signal
+        total = metrics["total_interruptions"]
+        good  = metrics["command_control_moves"]
+        bad   = metrics["rude_interruptions"]
+
+        if total == 0:
+            # no interruptions — neutral, neither rewarded nor penalized
+            score += 0.5
+        else:
+            # reward positive interruptions (de-escalation moves)
+            score += min(1.5, good * 0.75)
+            # penalize rude interruptions
+            score -= bad * 1.5
 
         final_score = max(0.0, min(10.0, score))
         evidence    = metrics["summary"]
 
-        if final_score >= 8.0:
-            reason = f"Highly effective caller management. Excellent command control and reassurances. {evidence}"
-        elif final_score >= 5.0:
-            reason = f"Acceptable management performance but conversational control was unstrategic. {evidence}"
+        # build reason with interruption context
+        if total == 0:
+            interruption_summary = "No interruptions detected in the call."
+        elif bad == 0:
+            interruption_summary = f"{good} interruption(s) detected — all classified as positive de-escalation moves."
+        elif good == 0:
+            interruption_summary = f"{bad} interruption(s) detected — all classified as rude or impatient."
         else:
-            reason = f"Soft-skills failure. Agent failed to anchor the caller's anxiety. {evidence}"
+            interruption_summary = f"{total} interruption(s) detected — {good} positive (command control), {bad} negative (rude)."
+
+        if final_score >= 8.0:
+            reason = f"Highly effective caller management. {interruption_summary} {evidence}"
+        elif final_score >= 5.0:
+            reason = f"Acceptable caller management. {interruption_summary} {evidence}"
+        else:
+            reason = f"Poor caller management. {interruption_summary} {evidence}"
 
         return {
             "score":  round(final_score, 2),
             "reason": reason,
             "audit": {
+                "total_interruptions":        metrics["total_interruptions"],
                 "tactical_grounding_actions": metrics["command_control_moves"],
-                "penalized_interruptions":    metrics["rude_interruptions"]
+                "penalized_interruptions":    metrics["rude_interruptions"],
+                "interruption_details":       metrics["interruption_details"]
             }
         }
 
@@ -565,7 +630,7 @@ Overlap instances:
                     "unjustified_gaps_found":  silence_res["unjustified_silence_count"],
                     "silence_logs":            silence_res["silence_logs"]
                 },
-                "caller_management_25pt": {
+                "call_interruptions_25pt": {
                     "weight":                "25%",
                     "raw_score_out_of_10":   cm_res["score"],
                     "weighted_contribution": round(wt_caller_m, 2),
@@ -578,7 +643,7 @@ Overlap instances:
                 "closing_statement":    round(wt_closing, 2),
                 "information_gathering": round(wt_info, 2),
                 "silence_analysis":     round(wt_silence, 2),
-                "caller_management":    round(wt_caller_m, 2),
+                "call_interruptions":    round(wt_caller_m, 2),
                 "total":                total_score
             },
             "soft_skills_analysis": {
